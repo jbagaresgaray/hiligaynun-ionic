@@ -1,9 +1,30 @@
-<ion-view view-title="Playlists">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
-      </ion-item>
-    </ion-list>
-  </ion-content>
+<ion-view view-title="Hiligaynun Krush">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <ion-list>
+            <ion-item href="#/app/playlist/letra" class="item item-avatar item-icon-right">
+                <img src="img/logo.png">
+                <h2>Mga Letra</h2>
+                <p>Da illest illegitimate</p>
+                <i class="icon ion-chevron-right royal"></i>
+            </ion-item>
+            <ion-item href="#/app/playlist/huni" class="item item-avatar item-icon-right">
+                <img src="img/fs-file.png">
+                <h2>Mga Huni</h2>
+                <p>Da illest illegitimate</p>
+                <i class="icon ion-chevron-right royal"></i>
+            </ion-item>
+            <ion-item href="#/app/playlist/kunla" class="item item-avatar item-icon-right">
+                <img src="img/material3.jpg">
+                <h2>Kunla / Syllables</h2>
+                <p>Da illest illegitimate</p>
+                <i class="icon ion-chevron-right royal"></i>
+            </ion-item>
+            <ion-item href="#/app/playlist/suli" class="item item-avatar item-icon-right">
+                <img src="img/material3.jpg">
+                <h2>Parehas kag Suli</h2>
+                <p>Da illest illegitimate</p>
+                <i class="icon ion-chevron-right royal"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
