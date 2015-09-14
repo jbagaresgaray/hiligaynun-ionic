@@ -1,105 +1,105 @@
 [{
     "name": "A",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/a.jpg",
     "translation": ""
 }, {
     "name": "B",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/b.jpg",
     "translation": ""
 }, {
     "name": "C",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/c.jpg",
     "translation": ""
 }, {
     "name": "D",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/d.jpg",
     "translation": ""
 }, {
     "name": "E",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/e.jpg",
     "translation": ""
 }, {
     "name": "F",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/f.jpg",
     "translation": ""
 }, {
     "name": "G",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/g.jpg",
     "translation": ""
 }, {
     "name": "H",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/h.jpg",
     "translation": ""
 }, {
     "name": "I",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/i.jpg",
     "translation": ""
 }, {
     "name": "J",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/j.jpg",
     "translation": ""
 }, {
     "name": "K",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/k.jpg",
     "translation": ""
 }, {
     "name": "L",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/l.jpg",
     "translation": ""
 }, {
     "name": "M",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/m.jpg",
     "translation": ""
 }, {
     "name": "N",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/n.jpg",
     "translation": ""
 }, {
     "name": "O",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/o.jpg",
     "translation": ""
 }, {
     "name": "P",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/p.jpg",
     "translation": ""
 }, {
     "name": "Q",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/q.jpg",
     "translation": ""
 }, {
     "name": "R",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/r.jpg",
     "translation": ""
 }, {
     "name": "S",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/s.jpg",
     "translation": ""
 }, {
     "name": "T",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/t.jpg",
     "translation": ""
 }, {
     "name": "U",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/u.jpg",
     "translation": ""
 }, {
     "name": "V",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/v.jpg",
     "translation": ""
 }, {
     "name": "W",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/w.jpg",
     "translation": ""
 }, {
     "name": "X",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/x.jpg",
     "translation": ""
 }, {
     "name": "Y",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/y.jpg",
     "translation": ""
 }, {
     "name": "Z",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    "img":"img/lessons/letters/z.jpg",
     "translation": ""
 }]
