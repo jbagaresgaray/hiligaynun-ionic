@@ -1,0 +1,85 @@
+[{
+    "title": "Ibon",
+    "description": "",
+    "art": "img/lessons/tunog/picture/bird.jpg",
+    "url": "",
+    "category": "hayop"
+},{
+    "title": "Kalabaw",
+    "description": "",
+    "art": "img/lessons/tunog/picture/carabao.jpg",
+    "url": "img/lessons/tunog/sound/cow.wav",
+    "category": "hayop"
+},{
+    "title": "Pusa",
+    "description": "",
+    "art": "img/lessons/tunog/picture/cats.jpg",
+    "url": "img/lessons/tunog/sound/cat.mp3",
+    "category": "hayop"
+},{
+    "title": "Baka",
+    "description": "",
+    "art": "img/lessons/tunog/picture/cow.jpg",
+    "url": "img/lessons/tunog/sound/cow.wav",
+    "category": "hayop"
+},{
+    "title": "Drum",
+    "description": "",
+    "art": "img/lessons/tunog/picture/download (1).jpg",
+    "url": "img/lessons/tunog/sound/drum.mp3",
+    "category": "bagay"
+},{
+    "title": "Maracas",
+    "description": "",
+    "art": "img/lessons/tunog/picture/download (2).jpg",
+    "url": "",
+    "category": ""
+},{
+    "title": "Gitara",
+    "description": "",
+    "art": "img/lessons/tunog/picture/download (3).jpg",
+    "url": "",
+    "category": ""
+},{
+    "title": "Bibi",
+    "description": "",
+    "art": "img/lessons/tunog/picture/duck.jpg",
+    "url": "img/lessons/tunog/sound/duck.mp3",
+    "category": ""
+},{
+    "title": "Palaka",
+    "description": "",
+    "art": "img/lessons/tunog/picture/frog.jpg",
+    "url": "img/lessons/tunog/sound/frog.mp3",
+    "category": ""
+},{
+    "title": "Kambing",
+    "description": "",
+    "art": "img/lessons/tunog/picture/goat.jpg",
+    "url": "img/lessons/tunog/sound/goat.mp3",
+    "category": ""
+},{
+    "title": "Simbals",
+    "description": "",
+    "art": "img/lessons/tunog/picture/images (2).jpg",
+    "url": "",
+    "category": ""
+},{
+    "title": "Unggoy",
+    "description": "",
+    "art": "img/lessons/tunog/picture/monkey.jpg",
+    "url": "",
+    "category": ""
+},{
+    "title": "Baboy",
+    "description": "",
+    "art": "img/lessons/tunog/picture/pigs.jpg",
+    "url": "img/lessons/tunog/sound/pig.wav",
+    "category": ""
+},{
+    "title": "Ahas",
+    "description": "",
+    "art": "img/lessons/tunog/picture/snake.jpg",
+    "url": "img/lessons/tunog/sound/snake.wav",
+    "category": ""
+}]

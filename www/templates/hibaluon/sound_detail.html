@@ -1,0 +1,27 @@
+<ion-view view-title="" id="sound">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <div class="list">
+            <ion-audio-track track="details">
+                <div class="list card">
+                    <div class="item item-body">
+                        <center>
+                            <h1>{{details.title}}</h1>
+                        </center>
+                    </div>
+                    <div class="item item-body">
+                        <img class="full-image" ng-src="{{details.art}}">
+                    </div>
+                    <div class="item item-body" ng-show="details.url !=''">
+                        <ion-audio-controls>
+                            <button class="button button-small button-assertive icon-left" ion-audio-play text-play="Play" text-pause="Pause"></button>
+                            <ion-spinner icon="ios" style="position: relative; top: 8px; left: 4px"></ion-spinner>
+                        </ion-audio-controls>
+                    </div>
+                    <div class="item item-divider" ng-show="details.url !=''">
+                        <ion-audio-progress-bar display-time></ion-audio-progress-bar>
+                    </div>
+                </div>
+            </ion-audio-track>
+        </div>
+    </ion-content>
+</ion-view>

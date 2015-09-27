@@ -19,19 +19,19 @@ angular.module('starter')
                     }
                 }
             })
-            .state('app.search', {
-                url: '/search',
+            .state('app.settings', {
+                url: '/settings',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/search.html'
+                        templateUrl: 'templates/settings.html'
                     }
                 }
             })
-            .state('app.browse', {
-                url: '/browse',
+            .state('app.scoreboard', {
+                url: '/scoreboard',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/browse.html'
+                        templateUrl: 'templates/scoreboard.html'
                     }
                 }
             })
@@ -39,9 +39,9 @@ angular.module('starter')
                 url: '/playlists/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/playlists.html',
+                        templateUrl: 'templates/hibaluon/playlists.html',
                         controller: 'PlaylistsCtrl',
-                        cache:false
+                        cache: false
                     }
                 }
             })
@@ -49,8 +49,72 @@ angular.module('starter')
                 url: '/playlist/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/playlist.html',
+                        templateUrl: 'templates/hibaluon/playlist.html',
                         controller: 'PlaylistCtrl'
+                    }
+                }
+            })
+            .state('app.sounds', {
+                url: '/sounds/:topicId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/sounds.html',
+                        controller: 'PlaylistCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.kunla', {
+                url: '/kunla/:topicId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/kunla.html',
+                        controller: 'PlaylistCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.detail', {
+                url: '/detail/:letter',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/detail.html',
+                        controller: 'PlaylistDetailCtrl'
+                    }
+                }
+            })
+            .state('app.sounddetail', {
+                url: '/sounddetail/:sound',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/sound_detail.html',
+                        controller: 'PlaylistSoundDetailCtrl'
+                    }
+                }
+            })
+            .state('app.kunladetail', {
+                url: '/kunladetail/:kunla',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/kunla_detail.html',
+                        controller: 'PlaylistKunlaDetailCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.info', {
+                url: '/info',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/tab-info.html'
+                    }
+                }
+            })
+            .state('app.author', {
+                url: '/author',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/tab-author.html'
                     }
                 }
             });

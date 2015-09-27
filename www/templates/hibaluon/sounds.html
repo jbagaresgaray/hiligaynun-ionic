@@ -1,10 +1,9 @@
 <ion-view view-title="Hiligaynon Krush">
     <ion-content ng-class="{expanded:isExpanded}">
         <ion-list>
-            <ion-item href="#" ng-repeat="row in helpers" class="item item-avatar item-icon-right">
-                <img src="img/ionic.png">
-                <h2>{{row.name}}</h2>
-                <p>Da illest illegitimate</p>
+            <ion-item href="#/app/sounddetail/{{row.title}}" ng-repeat="row in sounds" class="item item-avatar item-icon-right">
+                <img ng-src="{{row.art}}">
+                <h2>{{row.title}}</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>
         </ion-list>

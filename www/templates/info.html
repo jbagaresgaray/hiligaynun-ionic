@@ -1,0 +1,12 @@
+<ion-view view-title="Info & Author">
+    <ion-tabs class="tabs-top tabs-icon-top tabs-positive" ng-class="{expanded:isExpanded}">
+        <ion-tab title="Info" icon-off="ion-information" icon-on="ion-information-circled" href="#">
+            <ion-nav-view name="tab-info"></ion-nav-view>
+        </ion-tab>
+        <ion-tab title="Author" icon-off="ion-person" icon-on="ion-person-stalker" href="#">
+            <ion-nav-view name="tab-author"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+    <ion-content ng-class="{expanded:isExpanded}">
+    </ion-content>
+</ion-view>

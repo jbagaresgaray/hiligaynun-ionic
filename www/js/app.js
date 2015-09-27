@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter', ['ionic','ionic-material', 'ionMdInput'])
+angular.module('starter', ['ionic','ionic-material', 'ionMdInput','ionic-audio'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -14,4 +14,12 @@ angular.module('starter', ['ionic','ionic-material', 'ionMdInput'])
       StatusBar.styleDefault();
     }
   });
+
+  $ionicPlatform.onHardwareBackButton(function() {
+     event.preventDefault();
+     event.stopPropagation();
+  });
+})
+.config(function($ionicConfigProvider){
+  $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);;
 });

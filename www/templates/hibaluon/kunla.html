@@ -1,0 +1,11 @@
+<ion-view view-title="Hiligaynon Krush">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <ion-list>
+            <ion-item href="#/app/kunladetail/{{row.name}}" ng-repeat="row in syllables" class="item item-avatar item-icon-right">
+                <img ng-src="img/logo1.png">
+                <h2>{{row.name}}</h2>
+                <i class="icon ion-chevron-right royal"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

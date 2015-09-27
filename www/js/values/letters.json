@@ -1,105 +1,134 @@
 [{
     "name": "A",
-    "img":"img/lessons/letters/a.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/a.jpg",
+    "description": "",
+    "sample": "img/lessons/letters/pictures/amu (2).jpg"
 }, {
     "name": "B",
-    "img":"img/lessons/letters/b.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/b.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/baga (3).jpg"
 }, {
     "name": "C",
-    "img":"img/lessons/letters/c.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/c.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/comb.png"
 }, {
     "name": "D",
-    "img":"img/lessons/letters/d.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/d.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/Dahon.jpg"
 }, {
     "name": "E",
-    "img":"img/lessons/letters/e.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/e.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/elisi.png"
 }, {
     "name": "F",
-    "img":"img/lessons/letters/f.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/f.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "G",
-    "img":"img/lessons/letters/g.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/g.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/garapon.png"
 }, {
     "name": "H",
-    "img":"img/lessons/letters/h.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/h.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/comb.png"
 }, {
     "name": "I",
-    "img":"img/lessons/letters/i.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/i.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/final.jpg"
 }, {
     "name": "J",
-    "img":"img/lessons/letters/j.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/j.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "K",
-    "img":"img/lessons/letters/k.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/k.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/ecokalan2.jpg"
 }, {
     "name": "L",
-    "img":"img/lessons/letters/l.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/l.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/lata.jpg"
 }, {
     "name": "M",
-    "img":"img/lessons/letters/m.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/m.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/mani.jpg"
 }, {
     "name": "N",
-    "img":"img/lessons/letters/n.jpg",
-    "translation": ""
-}, {
+    "img":"img/lessons/letters/letters/n.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/nipa.jpg"
+},{
+    "name": "Ng",
+    "img":"img/lessons/letters/letters/ng.png",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/Ngipon.jpg"
+},{
     "name": "O",
-    "img":"img/lessons/letters/o.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/o.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/okra.png"
 }, {
     "name": "P",
-    "img":"img/lessons/letters/p.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/p.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/pispis1.jpg"
 }, {
     "name": "Q",
-    "img":"img/lessons/letters/q.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/q.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "R",
-    "img":"img/lessons/letters/r.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/r.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/rambutan-inside-2.jpg"
 }, {
     "name": "S",
-    "img":"img/lessons/letters/s.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/s.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/sulo.png"
 }, {
     "name": "T",
-    "img":"img/lessons/letters/t.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/t.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "U",
-    "img":"img/lessons/letters/u.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/u.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/uma.jpg"
 }, {
     "name": "V",
-    "img":"img/lessons/letters/v.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/v.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "W",
-    "img":"img/lessons/letters/w.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/w.jpg",
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/wasay.jpg"
 }, {
     "name": "X",
-    "img":"img/lessons/letters/x.jpg",
-    "translation": ""
+    "img":"img/lessons/letters/letters/x.jpg",
+    "translation": "",
+    "sample": ""
 }, {
     "name": "Y",
-    "img":"img/lessons/letters/y.jpg",
+    "img":"img/lessons/letters/letters/y.jpg",
     "translation": ""
 }, {
     "name": "Z",
-    "img":"img/lessons/letters/z.jpg",
+    "img":"img/lessons/letters/letters/z.jpg",
     "translation": ""
 }]
