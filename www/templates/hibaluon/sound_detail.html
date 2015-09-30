@@ -11,13 +11,13 @@
                     <div class="item item-body">
                         <img class="full-image" ng-src="{{details.art}}">
                     </div>
-                    <div class="item item-body" ng-show="details.url !=''">
+                    <div class="item item-body" ng-hide="details.url =='file:///android_asset/www/' || details.url =='file://'">
                         <ion-audio-controls>
                             <button class="button button-small button-assertive icon-left" ion-audio-play text-play="Play" text-pause="Pause"></button>
                             <ion-spinner icon="ios" style="position: relative; top: 8px; left: 4px"></ion-spinner>
                         </ion-audio-controls>
                     </div>
-                    <div class="item item-divider" ng-show="details.url !=''">
+                    <div class="item item-divider" ng-hide="details.url =='file:///android_asset/www/' || details.url =='file://'">
                         <ion-audio-progress-bar display-time></ion-audio-progress-bar>
                     </div>
                 </div>

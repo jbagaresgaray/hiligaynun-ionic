@@ -46,11 +46,13 @@ angular.module('starter')
         };
 
     })
-    .controller('PlaylistCtrl', function($scope, $stateParams, $ionicLoading, Helpers) {
+    .controller('PlaylistCtrl', function($scope, $stateParams, $ionicLoading, $window, Helpers) {
         console.log('params: ', $stateParams.topicId);
         $scope.helpers = {};
         $scope.sounds = {};
         $scope.syllables = {};
+
+        $window.localStorage['data'] = {};
 
         if (!_.isUndefined($stateParams.topicId)) {
             switch ($stateParams.topicId) {
@@ -58,36 +60,27 @@ angular.module('starter')
                     $ionicLoading.show();
                     Helpers.letters().then(function(res) {
                         console.log('letters: ', res.data);
-                        setTimeout(function() {
-                            $scope.$apply(function() {
-                                $scope.helpers = res.data;
-                                $ionicLoading.hide();
-                            });
-                        }, 100);
+                        $scope.helpers = res.data;
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+                        $ionicLoading.hide();
                     });
                     break;
                 case 'huni':
                     $ionicLoading.show();
                     Helpers.sounds().then(function(res) {
                         console.log('sounds: ', res.data);
-                        setTimeout(function() {
-                            $scope.$apply(function() {
-                                $scope.sounds = res.data;
-                                $ionicLoading.hide();
-                            });
-                        }, 100);
+                        $scope.sounds = res.data;
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+                        $ionicLoading.hide();
                     });
                     break;
                 case 'kunla':
                     $ionicLoading.show();
                     Helpers.syllables().then(function(res) {
                         console.log('syllables: ', res.data);
-                        setTimeout(function() {
-                            $scope.$apply(function() {
-                                $scope.syllables = res.data;
-                                $ionicLoading.hide();
-                            });
-                        }, 100);
+                        $scope.syllables = res.data;
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+                        $ionicLoading.hide();
                     });
                     break;
                 case 'suli':
@@ -102,62 +95,61 @@ angular.module('starter')
         console.log('params: ', $stateParams.letter);
         $scope.details = {};
         if (!_.isUndefined($stateParams.letter)) {
-            $ionicLoading.show();
-            Helpers.letters().then(function(res) {
-                console.log('data: ', res.data);
-                setTimeout(function() {
-                    $scope.$apply(function() {
-                        $scope.details = _.findWhere(res.data, {
-                            'name': $stateParams.letter
-                        });
-                        console.log('details: ', $scope.details);
-                        $ionicLoading.hide();
-                    });
-                }, 100);
-            });
+            if (!_.isEmpty($window.localStorage['data'])) {
+                $ionicLoading.show();
+
+                var data = JSON.parse($window.localStorage['data']);
+                $scope.details = _.findWhere(data, {
+                    'name': $stateParams.letter
+                });
+                console.log('details: ', $scope.details);
+                $ionicLoading.hide();
+            }
         }
     })
-    .controller('PlaylistSoundDetailCtrl', function($scope, $stateParams, $ionicLoading, Helpers) {
+    .controller('PlaylistSoundDetailCtrl', function($scope, $stateParams, $ionicLoading, $window, Helpers) {
         console.log('params: ', $stateParams.sound);
         $scope.details = {};
+
+        function getPhoneGapPath() {
+            var path = window.location.pathname;
+            path = path.substr(path, path.length - 10);
+            return 'file://' + path;
+        }
+
         if (!_.isUndefined($stateParams.sound)) {
-            $ionicLoading.show();
-            Helpers.sounds().then(function(res) {
-                console.log('sounds: ', res.data);
-                setTimeout(function() {
-                    $scope.$apply(function() {
-                        $scope.details = _.findWhere(res.data, {
-                            'title': $stateParams.sound
-                        });
-                        console.log('details: ', $scope.details);
-                        $ionicLoading.hide();
-                    });
-                }, 100);
-            });
+            if (!_.isEmpty($window.localStorage['data'])) {
+                $ionicLoading.show();
+                var data = JSON.parse($window.localStorage['data']);
+                $scope.details = _.findWhere(data, {
+                    'title': $stateParams.sound
+                });
+                $scope.details.url = getPhoneGapPath() + $scope.details.url
+                console.log('details: ', $scope.details);
+                $ionicLoading.hide();
+            }
         }
     })
     .controller('PlaylistKunlaDetailCtrl', function($scope, $stateParams, $ionicLoading, $ionicPopup, Helpers) {
         console.log('params: ', $stateParams.kunla);
         $scope.details = {};
+
         if (!_.isUndefined($stateParams.kunla)) {
-            $ionicLoading.show();
-            Helpers.syllables().then(function(res) {
-                console.log('syllables: ', res.data);
-                setTimeout(function() {
-                    $scope.$apply(function() {
-                        $scope.details = _.findWhere(res.data, {
-                            'name': $stateParams.kunla
-                        });
-                        console.log('details: ', $scope.details);
-                        $ionicLoading.hide();
-                    });
-                }, 100);
-            });
+            if (!_.isEmpty($window.localStorage['data'])) {
+                $ionicLoading.show();
+
+                var data = JSON.parse($window.localStorage['data']);
+                $scope.details = _.findWhere(data, {
+                    'name': $stateParams.kunla
+                });
+                console.log('details: ', $scope.details);
+                $ionicLoading.hide();
+            }
         }
 
         $scope.pilaKaKunla = function(value) {
             var num = value.split('-');
-            console.log('num: ',num);
+            console.log('num: ', num);
             $ionicPopup.alert({
                 title: 'Resulta',
                 template: '<center><b>' + value + '</b> = ' + num.length + ' ka kunla </center>'
