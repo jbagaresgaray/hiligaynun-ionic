@@ -86,6 +86,11 @@ angular.module('starter')
                 case 'suli':
                     $ionicLoading.show();
 
+                    $scope.$parent.showHeader();
+                    $scope.$parent.clearFabs();
+                    $scope.isExpanded = false;
+                    $scope.$parent.setExpanded(false);
+
                     $scope.clientSideList = [{
                         text: "Suli",
                         value: "suli"
