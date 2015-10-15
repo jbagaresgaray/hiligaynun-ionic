@@ -12,7 +12,7 @@
     "name": "C",
     "img":"img/lessons/letters/letters/c.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/comb.png"
+    "sample": ""
 }, {
     "name": "D",
     "img":"img/lessons/letters/letters/d.jpg",
@@ -126,9 +126,11 @@
 }, {
     "name": "Y",
     "img":"img/lessons/letters/letters/y.jpg",
-    "translation": ""
+    "translation": "",
+    "sample": "img/lessons/letters/pictures/yabe.jpg"
 }, {
     "name": "Z",
     "img":"img/lessons/letters/letters/z.jpg",
-    "translation": ""
+    "translation": "",
+    "sample": ""
 }]

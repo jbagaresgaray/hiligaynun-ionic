@@ -18,6 +18,11 @@ angular.module('starter')
                     return data;
                 });
             },
+            wordings: function(){
+                return $http.get('js/values/wordings.json').then(function(data) {
+                    return data;
+                });
+            },
             htmltexts: function() {
                 return $http.get('js/values/helper.json').then(function(data) {
                     return data;

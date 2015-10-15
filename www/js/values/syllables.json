@@ -1,7 +1,7 @@
 [{
     "name": "Lata",
     "kunla": "La-ta",
-    "img": ""
+    "img": "img/lessons/kunla/lata.png"
 }, {
     "name": "Tabuli",
     "kunla": "Ta-bu-li",
@@ -9,51 +9,51 @@
 }, {
     "name": "Ilaga",
     "kunla": "i-la-ga",
-    "img": ""
+    "img": "img/lessons/kunla/ilaga.png"
 }, {
     "name": "Bala",
     "kunla": "Ba-la",
-    "img": ""
+    "img": "img/lessons/kunla/bala.png"
 }, {
     "name": "Lababo",
     "kunla": "La-ba-bo",
-    "img": ""
+    "img": "img/lessons/kunla/lababo.png"
 }, {
     "name": "Lansang",
     "kunla": "Lan-sang",
-    "img": ""
+    "img": "img/lessons/kunla/lansang.png"
 }, {
     "name": "Laso",
     "kunla": "La-so",
-    "img": ""
+    "img": "img/lessons/kunla/laso.png"
 }, {
     "name": "Bali",
     "kunla": "Ba-li",
-    "img": ""
+    "img": "img/lessons/kunla/bali.png"
 }, {
     "name": "Yoyo",
     "kunla": "yo-yo",
-    "img": ""
+    "img": "img/lessons/kunla/yoyo.png"
 }, {
     "name": "Yabe",
     "kunla": "Ya-be",
-    "img": ""
+    "img": "img/lessons/kunla/yabe.png"
 }, {
     "name": "Ngipon",
     "kunla": "Ngi-pon",
-    "img": ""
+    "img": "img/lessons/kunla/ngipon.png"
 }, {
     "name": "Ngisi",
     "kunla": "Ngi-si",
-    "img": ""
+    "img": "img/lessons/kunla/ngisi.png"
 }, {
     "name": "Ngalangala",
     "kunla": "Ngala-ngala",
-    "img": ""
+    "img": "img/lessons/kunla/ngalangala.png"
 }, {
     "name": "Nguyngoy",
     "kunla": "Nguy-ngoy",
-    "img": ""
+    "img": "img/lessons/kunla/nguynguy.png"
 }, {
     "name": "Ordinaryo",
     "kunla": "Or-di-nar-yo",
@@ -73,15 +73,15 @@
 }, {
     "name": "Eroplano",
     "kunla": "E-ro-pla-no",
-    "img": ""
+    "img": "img/lessons/kunla/eroplano.png"
 }, {
     "name": "Elisi",
     "kunla": "E-li-si",
-    "img": ""
+    "img": "img/lessons/kunla/elisi.png"
 }, {
     "name": "Estante",
     "kunla": "Es-tan-te",
-    "img": ""
+    "img": "img/lessons/kunla/estante.png"
 }, {
     "name": "Regalo",
     "kunla": "Re-ga-lo",
@@ -89,31 +89,31 @@
 }, {
     "name": "Plete",
     "kunla": "Ple-te",
-    "img": ""
+    "img": "img/lessons/kunla/plete.png"
 }, {
     "name": "Yuhum",
     "kunla": "Yu-hum",
-    "img": ""
+    "img": "img/lessons/kunla/yuhum.png"
 }, {
     "name": "Yahong",
     "kunla": "Ya-hong",
-    "img": ""
+    "img": "img/lessons/kunla/yahong.png"
 }, {
     "name": "Baybay",
     "kunla": "Bay-bay",
-    "img": ""
+    "img": "img/lessons/kunla/baybay.png"
 }, {
     "name": "Tatay",
     "kunla": "Ta-tay",
-    "img": ""
+    "img": "img/lessons/kunla/tatay.png"
 }, {
     "name": "Hibi",
     "kunla": "Hi-bi",
-    "img": ""
+    "img": "img/lessons/kunla/hibi.png"
 }, {
     "name": "Tahu",
     "kunla": "Ta-hu",
-    "img": ""
+    "img": "img/lessons/kunla/tahu.png"
 }, {
     "name": "Bana",
     "kunla": "Ba-na",
@@ -121,19 +121,19 @@
 }, {
     "name": "Hitabu",
     "kunla": "Hi-ta-bu",
-    "img": ""
+    "img": "img/lessons/kunla/hitabu.png"
 }, {
     "name": "Tahi",
     "kunla": "Ta-hi",
-    "img": ""
+    "img": "img/lessons/kunla/tahi.png"
 }, {
     "name": "Okra",
     "kunla": "Ok-ra",
-    "img": ""
+    "img": "img/lessons/kunla/okra.png"
 }, {
     "name": "Orasan",
     "kunla": "O-ra-san",
-    "img": ""
+    "img": "img/lessons/kunla/orasan.png"
 }, {
     "name": "Orasyon",
     "kunla": "O-ras-yon",
@@ -141,19 +141,19 @@
 }, {
     "name": "Igi",
     "kunla": "i-gi",
-    "img": ""
+    "img": "img/lessons/kunla/igi.png"
 }, {
     "name": "Ido",
     "kunla": "i-do",
-    "img": ""
+    "img": "img/lessons/kunla/ido.png"
 }, {
     "name": "Ilong",
     "kunla": "i-long",
-    "img": ""
+    "img": "img/lessons/kunla/ilong.png"
 }, {
     "name": "Idik",
     "kunla": "i-dik",
-    "img": ""
+    "img": "img/lessons/kunla/idik.png"
 }, {
     "name": "Agi",
     "kunla": "A-gi",
@@ -161,9 +161,21 @@
 }, {
     "name": "Aga",
     "kunla": "A-ga",
-    "img": ""
+    "img": "img/lessons/kunla/aga.png"
 }, {
     "name": "Uga",
     "kunla": "U-ga",
-    "img": ""
+    "img": "img/lessons/kunla/uga.png"
+}, {
+    "name": "Guya",
+    "kunla": "Gu-ya",
+    "img": "img/lessons/kunla/guya.png"
+}, {
+    "name": "Sigay",
+    "kunla": "Si-gay",
+    "img": "img/lessons/kunla/sigay.png"
+}, {
+    "name": "Balay",
+    "kunla": "Ba-lay",
+    "img": "img/lessons/kunla/balay.png"
 }]

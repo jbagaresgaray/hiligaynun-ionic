@@ -39,7 +39,7 @@ angular.module('starter')
             });
 
             alertPopup.then(function(res) {
-                $state.go('app.single', {
+                $state.go('app.wordings', {
                     topicId: 'suli'
                 });
             });
@@ -84,6 +84,44 @@ angular.module('starter')
                     });
                     break;
                 case 'suli':
+                    $ionicLoading.show();
+
+                    $scope.clientSideList = [{
+                        text: "Suli",
+                        value: "suli"
+                    }, {
+                        text: "Parehas",
+                        value: "parehas"
+                    }];
+
+                    $scope.data = {
+                        clientSide: 'suli'
+                    };
+
+                    Helpers.wordings().then(function(res) {
+                        console.log('wordings: ', res.data);
+
+                        $scope.wordings = _.filter(res.data, {
+                            'category': $scope.data.clientSide
+                        });
+                        console.log('details: ', $scope.wordings);
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+
+                        $ionicLoading.hide();
+                    });
+
+
+                    $scope.eventButton = function(value) {
+                        $scope.wordings = [];
+                        $scope.data.clientSide = value;
+
+                        var data = JSON.parse($window.localStorage['data']);
+                        console.log('wordings: ', data);
+                        $scope.wordings = _.filter(data, {
+                            'category': $scope.data.clientSide
+                        });
+                        console.log('details: ', $scope.wordings);
+                    };
                     break;
                 default:
                     $ionicLoading.hide();
@@ -91,7 +129,7 @@ angular.module('starter')
             }
         }
     })
-    .controller('PlaylistDetailCtrl', function($scope, $stateParams, $ionicLoading, Helpers) {
+    .controller('PlaylistDetailCtrl', function($scope, $window, $stateParams, $ionicLoading, Helpers) {
         console.log('params: ', $stateParams.letter);
         $scope.details = {};
         if (!_.isUndefined($stateParams.letter)) {
@@ -130,7 +168,7 @@ angular.module('starter')
             }
         }
     })
-    .controller('PlaylistKunlaDetailCtrl', function($scope, $stateParams, $ionicLoading, $ionicPopup, Helpers) {
+    .controller('PlaylistKunlaDetailCtrl', function($scope, $window, $stateParams, $ionicLoading, $ionicPopup, Helpers) {
         console.log('params: ', $stateParams.kunla);
         $scope.details = {};
 
@@ -155,4 +193,21 @@ angular.module('starter')
                 template: '<center><b>' + value + '</b> = ' + num.length + ' ka kunla </center>'
             });
         };
+    })
+    .controller('PlaylistWordingDetailCtrl', function($scope, $window, $stateParams, $ionicLoading, $ionicPopup, Helpers) {
+        console.log('params: ', $stateParams.kunla);
+        $scope.details = {};
+
+        if (!_.isUndefined($stateParams.kunla)) {
+            if (!_.isEmpty($window.localStorage['data'])) {
+                $ionicLoading.show();
+
+                var data = JSON.parse($window.localStorage['data']);
+                $scope.details = _.findWhere(data, {
+                    'name': $stateParams.kunla
+                });
+                console.log('details: ', $scope.details);
+                $ionicLoading.hide();
+            }
+        }
     });

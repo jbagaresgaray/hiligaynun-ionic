@@ -74,6 +74,16 @@ angular.module('starter')
                     }
                 }
             })
+            .state('app.wordings', {
+                url: '/wordings/:topicId',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/wording.html',
+                        controller: 'PlaylistCtrl',
+                        cache: false
+                    }
+                }
+            })
             .state('app.detail', {
                 url: '/detail/:letter',
                 views: {
@@ -98,6 +108,16 @@ angular.module('starter')
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/kunla_detail.html',
                         controller: 'PlaylistKunlaDetailCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.wordingdetail', {
+                url: '/wordingdetail/:kunla',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/wordingdetail.html',
+                        controller: 'PlaylistWordingDetailCtrl',
                         cache: false
                     }
                 }
