@@ -6,36 +6,64 @@
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/mainit_malamig.png",
     "name": "Mainit kag Malamig"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/manubo_mataas.png",
     "name": "Manubo kag Mataas"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/kulang_sobra.png",
     "name": "Kulang kag Sobra"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/masadya_masubo.png",
     "name": "Masadya kag Masubo"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/magaras_mapino.png",
     "name": "Magaras kag Mapino"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/madamol_manipis.png",
     "name": "Madamol kag Manipis"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/mahugod_matamad.png",
     "name": "Mahugod kag Matamad"
-},{
+}, {
     "category": "suli",
     "img": "img/lessons/wordings/antonyms/maukoy_magamo.png",
     "name": "Maukoy kag Magamo"
-},{
+}, {
     "category": "suli",
-    "img": "img/lessons/wordings/antonyms/mabuot_suplada.pnh",
+    "img": "img/lessons/wordings/antonyms/mabuot_suplada.png",
     "name": "Mabuot kag Suplada"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/tama_husto.png",
+    "name": "Tama kag Husto"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/mapisan_mahugod.png",
+    "name": "Mapisan kag Mahugod"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/maestra_manunudlo.png",
+    "name": "Maestra kag Manunudlo"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/mapintas_mabangis.png",
+    "name": "Mapintas kag Mabangis"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/karera_paunauna.png",
+    "name": "Karera kag Paunauna"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/matinlo_malimpyo.png",
+    "name": "Matinlo kag Malimpyo"
+}, {
+    "category": "parehas",
+    "img": "img/lessons/wordings/synonyms/maabtik_alisto.png",
+    "name": "Maabtik kag Alisto"
 }]
