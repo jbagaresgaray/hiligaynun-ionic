@@ -125,7 +125,7 @@ angular.module('starter')
                 }
             })
             .state('app.wordingdetail', {
-                url: '/wordingdetail/:kunla',
+                url: '/wordingdetail/:wording',
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/wordings/wordingdetail.html',
@@ -136,6 +136,48 @@ angular.module('starter')
             })
 
 
+
+
+            .state('app.quizLetter', {
+                url: '/quiz/letter',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/letra.html',
+                        controller: 'letraCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.quizHuni', {
+                url: '/quiz/huni',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/huni.html',
+                        controller: 'letraCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.quizKunla', {
+                url: '/quiz/kunla',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/kunla.html',
+                        controller: 'letraCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.quizWording', {
+                url: '/quiz/wording',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/wording.html',
+                        controller: 'letraCtrl',
+                        cache: false
+                    }
+                }
+            })
 
 
 
