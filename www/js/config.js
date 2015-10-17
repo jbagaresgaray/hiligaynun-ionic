@@ -3,7 +3,6 @@
 angular.module('starter')
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
-
             .state('app', {
                 url: '/app',
                 abstract: true,
@@ -35,6 +34,9 @@ angular.module('starter')
                     }
                 }
             })
+
+
+
             .state('app.playlists', {
                 url: '/playlists/:topicId',
                 views: {
@@ -45,11 +47,21 @@ angular.module('starter')
                     }
                 }
             })
+            .state('app.huni', {
+                url: '/huni',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hibaluon/huni/main.html',
+                        controller: 'huniCtrl',
+                        cache: false
+                    }
+                }
+            })
             .state('app.single', {
                 url: '/playlist/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/playlist.html',
+                        templateUrl: 'templates/hibaluon/letra/playlist.html',
                         controller: 'PlaylistCtrl'
                     }
                 }
@@ -58,7 +70,7 @@ angular.module('starter')
                 url: '/sounds/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/sounds.html',
+                        templateUrl: 'templates/hibaluon/huni/sounds.html',
                         controller: 'PlaylistCtrl',
                         cache: false
                     }
@@ -68,7 +80,7 @@ angular.module('starter')
                 url: '/kunla/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/kunla.html',
+                        templateUrl: 'templates/hibaluon/kunla/kunla.html',
                         controller: 'PlaylistCtrl',
                         cache: false
                     }
@@ -78,7 +90,7 @@ angular.module('starter')
                 url: '/wordings/:topicId',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/wording.html',
+                        templateUrl: 'templates/hibaluon/wordings/wording.html',
                         controller: 'PlaylistCtrl',
                         cache: false
                     }
@@ -88,7 +100,7 @@ angular.module('starter')
                 url: '/detail/:letter',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/detail.html',
+                        templateUrl: 'templates/hibaluon/letra/detail.html',
                         controller: 'PlaylistDetailCtrl'
                     }
                 }
@@ -97,7 +109,7 @@ angular.module('starter')
                 url: '/sounddetail/:sound',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/sound_detail.html',
+                        templateUrl: 'templates/hibaluon/huni/sound_detail.html',
                         controller: 'PlaylistSoundDetailCtrl'
                     }
                 }
@@ -106,7 +118,7 @@ angular.module('starter')
                 url: '/kunladetail/:kunla',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/kunla_detail.html',
+                        templateUrl: 'templates/hibaluon/kunla/kunla_detail.html',
                         controller: 'PlaylistKunlaDetailCtrl',
                         cache: false
                     }
@@ -116,12 +128,20 @@ angular.module('starter')
                 url: '/wordingdetail/:kunla',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hibaluon/wordingdetail.html',
+                        templateUrl: 'templates/hibaluon/wordings/wordingdetail.html',
                         controller: 'PlaylistWordingDetailCtrl',
                         cache: false
                     }
                 }
             })
+
+
+
+
+
+
+
+
             .state('app.info', {
                 url: '/info',
                 views: {

@@ -19,32 +19,79 @@ angular.module('starter')
     .controller('PlaylistsCtrl', function($scope, $stateParams, $state, $ionicPopup) {
         console.log('params: ', $stateParams.topicId);
 
-        $scope.showKunla = function() {
-            var alertPopup = $ionicPopup.alert({
-                title: 'Meaning',
-                template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            });
+        if (!_.isUndefined($stateParams.topicId)) {
+            if ($stateParams.topicId == 'learn') {
+                $scope.openLetra = function() {
+                    $state.go('app.single', {
+                        'topicId': 'letra'
+                    });
+                };
 
-            alertPopup.then(function(res) {
-                $state.go('app.kunla', {
-                    topicId: 'kunla'
-                });
+                $scope.openHuni = function() {
+                    $state.go('app.huni');
+                };
+
+                $scope.showKunla = function() {
+                    var alertPopup = $ionicPopup.alert({
+                        title: 'Meaning',
+                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    });
+
+                    alertPopup.then(function(res) {
+                        $state.go('app.kunla', {
+                            topicId: 'kunla'
+                        });
+                    });
+                };
+
+                $scope.showSuli = function() {
+                    var alertPopup = $ionicPopup.alert({
+                        title: 'Meaning',
+                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                    });
+
+                    alertPopup.then(function(res) {
+                        $state.go('app.wordings', {
+                            topicId: 'suli'
+                        });
+                    });
+                };
+            } else {
+                $scope.openLetra = function(id) {
+                    $state.go('app.single', {
+                        'topicId': 'letra'
+                    });
+                };
+
+                $scope.openHuni = function(id) {
+                    $state.go('app.sounds', {
+                        'topicId': 'huni'
+                    });
+                };
+
+                $scope.showKunla = function() {
+
+                    $state.go('app.kunla', {
+                        topicId: 'kunla'
+                    });
+
+                };
+
+                $scope.showSuli = function() {
+
+                    $state.go('app.wordings', {
+                        topicId: 'suli'
+                    });
+                };
+            }
+        }
+    })
+    .controller('huniCtrl', function($scope, $state, $ionicLoading, $window) {
+        $scope.openHuni = function(id) {
+            $state.go('app.sounds', {
+                'topicId': 'huni-' + id
             });
         };
-
-        $scope.showSuli = function() {
-            var alertPopup = $ionicPopup.alert({
-                title: 'Meaning',
-                template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            });
-
-            alertPopup.then(function(res) {
-                $state.go('app.wordings', {
-                    topicId: 'suli'
-                });
-            });
-        };
-
     })
     .controller('PlaylistCtrl', function($scope, $stateParams, $ionicLoading, $window, Helpers) {
         console.log('params: ', $stateParams.topicId);
@@ -59,25 +106,34 @@ angular.module('starter')
                 case 'letra':
                     $ionicLoading.show();
                     Helpers.letters().then(function(res) {
-                        console.log('letters: ', res.data);
                         $scope.helpers = res.data;
                         $window.localStorage['data'] = JSON.stringify(res.data);
                         $ionicLoading.hide();
                     });
                     break;
-                case 'huni':
+                case 'huni-sapat':
                     $ionicLoading.show();
                     Helpers.sounds().then(function(res) {
-                        console.log('sounds: ', res.data);
-                        $scope.sounds = res.data;
                         $window.localStorage['data'] = JSON.stringify(res.data);
+                        $scope.sounds = _.filter(res.data, {
+                            'category': 'sapat'
+                        });
+                        $ionicLoading.hide();
+                    });
+                    break;
+                case 'huni-butang':
+                    $ionicLoading.show();
+                    Helpers.sounds().then(function(res) {
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+                        $scope.sounds = _.filter(res.data, {
+                            'category': 'butang'
+                        });
                         $ionicLoading.hide();
                     });
                     break;
                 case 'kunla':
                     $ionicLoading.show();
                     Helpers.syllables().then(function(res) {
-                        console.log('syllables: ', res.data);
                         $scope.syllables = res.data;
                         $window.localStorage['data'] = JSON.stringify(res.data);
                         $ionicLoading.hide();

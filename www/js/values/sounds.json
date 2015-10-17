@@ -3,83 +3,83 @@
     "artist": "",
     "art": "img/lessons/tunog/picture/bird.jpg",
     "url": "",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Kalabaw",
     "artist": "",
     "art": "img/lessons/tunog/picture/carabao.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Pusa",
     "artist": "",
     "art": "img/lessons/tunog/picture/cats.jpg",
     "url": "img/lessons/tunog/sound/cat.mp3",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Baka",
     "artist": "",
     "art": "img/lessons/tunog/picture/cow.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Drum",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (1).jpg",
     "url": "img/lessons/tunog/sound/drum.mp3",
-    "category": "bagay"
+    "category": "butang"
 },{
     "title": "Maracas",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (2).jpg",
     "url": "",
-    "category": "bagay"
+    "category": "butang"
 },{
     "title": "Gitara",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (3).jpg",
     "url": "",
-    "category": "bagay"
+    "category": "butang"
 },{
     "title": "Bibi",
     "artist": "",
     "art": "img/lessons/tunog/picture/duck.jpg",
     "url": "img/lessons/tunog/sound/duck.mp3",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Palaka",
     "artist": "",
     "art": "img/lessons/tunog/picture/frog.jpg",
     "url": "img/lessons/tunog/sound/frog.mp3",
-    "category": "hayop"
+    "category": "sapat"
 },{
     "title": "Kambing",
     "artist": "",
     "art": "img/lessons/tunog/picture/goat.jpg",
     "url": "img/lessons/tunog/sound/goat.mp3",
-    "category": ""
+    "category": "sapat"
 },{
     "title": "Simbals",
     "artist": "",
     "art": "img/lessons/tunog/picture/images (2).jpg",
     "url": "",
-    "category": ""
+    "category": "butang"
 },{
     "title": "Unggoy",
     "artist": "",
     "art": "img/lessons/tunog/picture/monkey.jpg",
     "url": "",
-    "category": ""
+    "category": "sapat"
 },{
     "title": "Baboy",
     "artist": "",
     "art": "img/lessons/tunog/picture/pigs.jpg",
     "url": "img/lessons/tunog/sound/pig.wav",
-    "category": ""
+    "category": "sapat"
 },{
     "title": "Ahas",
     "artist": "",
     "art": "img/lessons/tunog/picture/snake.jpg",
     "url": "img/lessons/tunog/sound/snake.wav",
-    "category": ""
+    "category": "sapat"
 }]
