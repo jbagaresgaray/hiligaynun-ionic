@@ -153,7 +153,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
-                        controller: 'letraCtrl',
+                        controller: 'huniCtrl',
                         cache: false
                     }
                 }
@@ -163,7 +163,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/kunla.html',
-                        controller: 'letraCtrl',
+                        controller: 'kunlaCtrl',
                         cache: false
                     }
                 }
@@ -172,8 +172,8 @@ angular.module('starter')
                 url: '/quiz/wording',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hampang/wording.html',
-                        controller: 'letraCtrl',
+                        templateUrl: 'templates/hampang/wordings.html',
+                        controller: 'wordingCtrl',
                         cache: false
                     }
                 }
