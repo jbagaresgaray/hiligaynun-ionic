@@ -16,7 +16,7 @@ angular.module('starter')
         // Activate ink for controller
         ionicMaterialInk.displayEffect();
     })
-    .controller('PlaylistsCtrl', function($scope, $stateParams, $state, $ionicPopup) {
+    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup) {
         console.log('params: ', $stateParams.topicId);
 
         if (!_.isUndefined($stateParams.topicId)) {
@@ -28,7 +28,9 @@ angular.module('starter')
                 };
 
                 $scope.openHuni = function() {
-                    $state.go('app.huni');
+                    console.log('app.huni');
+                    // $state.go('app.huni');
+                    $location.path('/app/huni')
                 };
 
                 $scope.showKunla = function() {
@@ -57,16 +59,16 @@ angular.module('starter')
                     });
                 };
             } else {
+                console.log('else');
+
                 $scope.openLetra = function(id) {
                     $state.go('app.single', {
                         'topicId': 'letra'
                     });
                 };
 
-                $scope.openHuni = function(id) {
-                    $state.go('app.sounds', {
-                        'topicId': 'huni'
-                    });
+                $scope.openHuni = function() {
+                    $state.go('app.sounds');
                 };
 
                 $scope.showKunla = function() {

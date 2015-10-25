@@ -1,3 +1,3 @@
 'use strict';
 angular.module('starter')
-    .controller('huniCtrl', function($scope) {});
+    .controller('huniQuizCtrl', function($scope) {});
