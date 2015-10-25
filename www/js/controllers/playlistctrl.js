@@ -4,8 +4,8 @@ angular.module('starter')
     .controller('MenuCtrl', function($scope, $timeout, ionicMaterialMotion, ionicMaterialInk) {
         $scope.$parent.showHeader();
         $scope.$parent.clearFabs();
-        $scope.isExpanded = true;
-        $scope.$parent.setExpanded(true);
+        $scope.isExpanded = false;
+        $scope.$parent.setExpanded(false);
 
         $timeout(function() {
             ionicMaterialMotion.fadeSlideIn({
@@ -60,30 +60,21 @@ angular.module('starter')
                 };
             } else {
                 console.log('else');
-
-                $scope.openLetra = function(id) {
-                    $state.go('app.single', {
-                        'topicId': 'letra'
-                    });
+                $scope.openLetra = function() {
+                    console.log('openLetra');
+                    $state.go('app.quizLetter');
                 };
 
                 $scope.openHuni = function() {
-                    $state.go('app.sounds');
+                    $state.go('app.quizHuni');
                 };
 
                 $scope.showKunla = function() {
-
-                    $state.go('app.kunla', {
-                        topicId: 'kunla'
-                    });
-
+                    $state.go('app.quizKunla');
                 };
 
                 $scope.showSuli = function() {
-
-                    $state.go('app.wordings', {
-                        topicId: 'suli'
-                    });
+                    $state.go('app.quizWording');
                 };
             }
         }
