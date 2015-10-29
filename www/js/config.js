@@ -171,7 +171,7 @@ angular.module('starter')
                 url: '/quiz/wording',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hampang/wordings.html',
+                        templateUrl: 'templates/hampang/wording.html',
                         controller: 'wordingCtrl',
                         cache: false
                     }

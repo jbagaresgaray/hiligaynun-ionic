@@ -1,5 +1,21 @@
-<ion-view view-title="Parehas kag Suli">
-    <ion-content ng-class="{expanded:isExpanded}">
-        <h1>Wordings</h1>
+<ion-view view-title="Parehas Kag Suli" hide-back-button="true">
+    <ion-content padding="true">
+        <div class="list card">
+            <div class="item item-body">
+                <h1 class="text-center">{{questions.title}}</h1>
+            </div>
+        </div>
+        <div class="list">
+            <ion-radio ng-repeat="answer in questions.choices" ng-value="answer.title" ng-model="answer.checked" ng-click="serverSideChange($index,answer,questions)">
+                {{answer.title}}
+            </ion-radio>
+        </div>
     </ion-content>
+    <div class="bar bar-footer stable-bg">
+        <div class="button-bar button-assertive">
+            <a class="button button-positive" ng-click="previousquestion()">PREV</a>
+            <a class="button button-assertive" ng-click="home()">HOME</a>
+            <a class="button button-positive" ng-click="nextquestion()">NEXT</a>
+        </div>
+    </div>
 </ion-view>

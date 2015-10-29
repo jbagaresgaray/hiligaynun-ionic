@@ -11,23 +11,11 @@
             </ion-radio>
         </div>
     </ion-content>
-    <div class="bar bar-subfooter has-customsubfooter positive-bg positive-border">
-        <div class="row">
-            <div class="col">
-                <a class="button button-block button-energized" ng-click="previousquestion()">
-                    PREV
-                </a>
-            </div>
-            <div class="col">
-                <button class="button button-block button-energized" ng-click="nextquestion()">
-                    NEXT
-                </button>
-            </div>
-        </div>
-        <div class="row">
-            <a class="button button-block button-assertive" ng-click="home()">
-                HOME
-            </a>
+    <div class="bar bar-footer stable-bg">
+        <div class="button-bar button-assertive">
+            <a class="button button-positive" ng-click="previousquestion()">PREV</a>
+            <a class="button button-assertive" ng-click="home()">HOME</a>
+            <a class="button button-positive" ng-click="nextquestion()">NEXT</a>
         </div>
     </div>
 </ion-view>
