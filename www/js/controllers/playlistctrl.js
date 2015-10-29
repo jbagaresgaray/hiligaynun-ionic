@@ -4,7 +4,7 @@ angular.module('starter')
     .controller('MenuCtrl', function($scope, $timeout) {
 
     })
-    .controller('PlaylistsCtrl', function($scope, $stateParams, $state, $ionicPopup) {
+    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup) {
         console.log('params: ', $stateParams.topicId);
 
         if (!_.isUndefined($stateParams.topicId)) {
@@ -16,7 +16,9 @@ angular.module('starter')
                 };
 
                 $scope.openHuni = function() {
-                    $state.go('app.huni');
+                    console.log('app.huni');
+                    // $state.go('app.huni');
+                    $location.path('/app/huni')
                 };
 
                 $scope.showKunla = function() {

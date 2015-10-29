@@ -52,8 +52,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/huni/main.html',
-                        controller: 'huniCtrl',
-                        cache: false
+                        controller: 'huniCtrl'
                     }
                 }
             })

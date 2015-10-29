@@ -1,17 +1,23 @@
 [{
-    "title": "Ibon",
+    "title": "Ido",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/dog.jpg",
+    "url": "img/lessons/tunog/sound/dog.wav",
+    "category": "sapat"
+},{
+    "title": "Pispis",
     "artist": "",
     "art": "img/lessons/tunog/picture/bird.jpg",
     "url": "",
     "category": "sapat"
 },{
-    "title": "Kalabaw",
+    "title": "Karabaw",
     "artist": "",
     "art": "img/lessons/tunog/picture/carabao.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
     "category": "sapat"
 },{
-    "title": "Pusa",
+    "title": "Kuring",
     "artist": "",
     "art": "img/lessons/tunog/picture/cats.jpg",
     "url": "img/lessons/tunog/sound/cat.mp3",
@@ -23,7 +29,7 @@
     "url": "img/lessons/tunog/sound/cow.wav",
     "category": "sapat"
 },{
-    "title": "Drum",
+    "title": "Tambol",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (1).jpg",
     "url": "img/lessons/tunog/sound/drum.mp3",
@@ -41,19 +47,19 @@
     "url": "",
     "category": "butang"
 },{
-    "title": "Bibi",
+    "title": "Pato",
     "artist": "",
     "art": "img/lessons/tunog/picture/duck.jpg",
     "url": "img/lessons/tunog/sound/duck.mp3",
     "category": "sapat"
 },{
-    "title": "Palaka",
+    "title": "Paka",
     "artist": "",
     "art": "img/lessons/tunog/picture/frog.jpg",
     "url": "img/lessons/tunog/sound/frog.mp3",
     "category": "sapat"
 },{
-    "title": "Kambing",
+    "title": "Kanbing",
     "artist": "",
     "art": "img/lessons/tunog/picture/goat.jpg",
     "url": "img/lessons/tunog/sound/goat.mp3",
@@ -77,9 +83,45 @@
     "url": "img/lessons/tunog/sound/pig.wav",
     "category": "sapat"
 },{
-    "title": "Ahas",
+    "title": "Man-og",
     "artist": "",
     "art": "img/lessons/tunog/picture/snake.jpg",
     "url": "img/lessons/tunog/sound/snake.wav",
     "category": "sapat"
+},{
+    "title": "Orasan",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/Orasan.png",
+    "url": "",
+    "category": "butang"
+},{
+    "title": "Bola",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/bola.png",
+    "url": "",
+    "category": "butang"
+},{
+    "title": "Telepono",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/telepono.png",
+    "url": "",
+    "category": "butang"
+},{
+    "title": "Kampana",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/kampana.png",
+    "url": "",
+    "category": "butang"
+},{
+    "title": "Ambulansya",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/ambulansya.png",
+    "url": "",
+    "category": "butang"
+},{
+    "title": "Trumpeta",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/trumpeta.png",
+    "url": "",
+    "category": "butang"
 }]

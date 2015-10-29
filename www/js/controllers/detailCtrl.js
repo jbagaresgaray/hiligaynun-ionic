@@ -2,7 +2,9 @@
 
 angular.module('starter')
     .controller('huniCtrl', function($scope, $state, $ionicLoading, $window) {
+        console.log('huniCtrl');
         $scope.openHuni = function(id) {
+            console.log('id: ',id);
             $state.go('app.sounds', {
                 'topicId': 'huni-' + id
             });
