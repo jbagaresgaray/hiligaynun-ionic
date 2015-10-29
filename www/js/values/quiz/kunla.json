@@ -1,17 +1,15 @@
 [{
-    "ans": 1,
-    "title": " It is the authority of the President of the Philippines to suspend the execution of a penalty, reduce the sentence and extinguish criminal liability.",
+    "ans": 2,
+    "title": "Lata",
     "choices": [{
-        "choice": "Parole",
+        "choice": "L-ata",
         "checked": false
     }, {
-        "choice": "Executive clemency",
+        "choice": "Lat-a",
         "checked": false
     }, {
-        "choice": "Pardon",
-        "checked": false
-    }, {
-        "choice": "President’s clemency",
+        "choice": "La-ta",
         "checked": false
     }]
-}];
+}]
+

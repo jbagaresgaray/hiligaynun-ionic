@@ -63,3 +63,85 @@
     max-width: 100%;
     max-height: 100%;
 }
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1) {
+    .button.button-block, .button.button-full {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 160px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .button.button-block, .button.button-full {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 160px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 180px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 225px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 225px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (-webkit-device-pixel-ratio: 1.5) {
+    /* CSS for high-density screens */
+
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 180px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (-webkit-device-pixel-ratio: 0.75) {
+    /* CSS for low-density screens */
+
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 180px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (-webkit-device-pixel-ratio: 3) {
+    /* CSS for low-density screens */
+
+    .has-customsubfooter {
+        bottom: 0px;
+        height: 180px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

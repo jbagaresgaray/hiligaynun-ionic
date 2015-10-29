@@ -13,6 +13,8 @@
     "ion-md-input": "~1.0.4",
     "ionic-audio": "~1.2.5",
     "ionic-material": "~0.4.2",
-    "lodash": "~3.10.1"
+    "lodash": "~3.10.1",
+    "angular-dragdrop": "~1.0.12",
+    "ngDraggable": "~0.1.8"
   }
 }

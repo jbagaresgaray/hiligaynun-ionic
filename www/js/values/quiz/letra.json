@@ -1,12 +1,9 @@
 [{
     "ans": 1,
-    "title": "E drag ang Letra sa tamang sagot",
-    "img": "",
+    "img": "img/lessons/letters/pictures/uma.jpg",
     "choices": [{
-        "choice": "",
-        "img": ""
+        "img": "img/lessons/letters/letters/d.jpg"
     },{
-        "choice": "",
-        "img": ""
+        "img": "img/lessons/letters/letters/u.jpg"
     }]
 }]

@@ -1,20 +1,8 @@
 'use strict';
 
 angular.module('starter')
-    .controller('MenuCtrl', function($scope, $timeout, ionicMaterialMotion, ionicMaterialInk) {
-        $scope.$parent.showHeader();
-        $scope.$parent.clearFabs();
-        $scope.isExpanded = false;
-        $scope.$parent.setExpanded(false);
+    .controller('MenuCtrl', function($scope, $timeout) {
 
-        $timeout(function() {
-            ionicMaterialMotion.fadeSlideIn({
-                selector: '.animate-fade-slide-in .item'
-            });
-        }, 200);
-
-        // Activate ink for controller
-        ionicMaterialInk.displayEffect();
     })
     .controller('PlaylistsCtrl', function($scope, $stateParams, $state, $ionicPopup) {
         console.log('params: ', $stateParams.topicId);

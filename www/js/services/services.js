@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .factory('Helpers', function($http, $q) {
+    .factory('Helpers', function($http) {
         return {
             letters: function() {
                 return $http.get('js/values/letters.json').then(function(data) {
@@ -22,14 +22,30 @@ angular.module('starter')
                 return $http.get('js/values/wordings.json').then(function(data) {
                     return data;
                 });
-            },
-            htmltexts: function() {
-                return $http.get('js/values/helper.json').then(function(data) {
-                    return data;
-                });
-            },
-            css: function() {
-
             }
         }
+    })
+    .factory('Quiz', function($http){
+        return {
+            letters: function() {
+                return $http.get('js/values/quiz/letra.json').then(function(data) {
+                    return data.data;
+                });
+            },
+            sounds: function() {
+                return $http.get('js/values/quiz/huni.json').then(function(data) {
+                    return data.data;
+                });
+            },
+            syllables: function() {
+                return $http.get('js/values/quiz/kunla.json').then(function(data) {
+                    return data.data;
+                });
+            },
+            wordings: function(){
+                return $http.get('js/values/quiz/wording.json').then(function(data) {
+                    return data.data;
+                });
+            }
+        };
     });
