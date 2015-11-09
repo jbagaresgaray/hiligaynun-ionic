@@ -1,12 +1,13 @@
-<ion-view view-title="Letra" hide-back-button="true">
-    <ion-content>
-    	<h4 class="text-center">
+<ion-view view-title="Letra" hide-back-button="true" ng-controller="letraCtrl">
+    <ion-content scroll="false">
+        <h4 class="text-center">
             E Drag ang imahe sa tamang sagot
         </h4>
         <div class="list">
-            <div class="item item-body">
+             <div class="item item-body">
                 <img class="full-image" ng-src="{{letra.img}}" ng-drag="true" ng-drag-data="letra" data-allow-transform="true">
-            </div>
+            </div> 
+            
         </div>
         <div class="list card" ng-repeat="obj in letra.choices">
             <a class="item item-avatar" ng-drop="true" ng-drop-success="onDropComplete1($data,$event,{{$index}})" ng-center-anchor="{{centerAnchor}}">
@@ -14,5 +15,6 @@
                 <img class="full-image" ng-src="{{selected_image}}" ng-show="selected_image.length > 0" ng-if="$index == index">
             </a>
         </div>
+        
     </ion-content>
 </ion-view>

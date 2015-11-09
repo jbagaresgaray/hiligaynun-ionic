@@ -2,14 +2,21 @@
 angular.module('starter')
     .controller('letraCtrl', function($scope, Quiz) {
         console.log('letraCtrl');
+
         $scope.letra = [];
         $scope.selected_image = {};
         $scope.index = {};
         $scope.centerAnchor = true;
 
+
         Quiz.letters().then(function(res) {
             console.log('letters: ', res[0]);
-            $scope.letra = res[0];
+
+            setTimeout(function() {
+                $scope.$apply(function() {
+                    $scope.letra = res[0];
+                });
+            }, 10);
         });
 
         $scope.onDropComplete1 = function(data, evt, index) {
@@ -33,14 +40,12 @@ angular.module('starter')
             });
 
             $timeout(function() {
-                $ionicLoading.hide();
                 if (my_ans == answer) {
                     $scope.eventButton(1);
                 } else {
                     $scope.eventButton(0);
                 }
             }, 1000);
-
-        }
+        };
 
     });

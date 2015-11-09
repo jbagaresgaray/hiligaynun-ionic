@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter', ['ionic','ionic-material', 'ionMdInput','ionic-audio','ngDraggable'])
+angular.module('starter', ['ionic','ionic-audio','ngDraggable'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
