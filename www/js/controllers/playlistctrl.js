@@ -4,8 +4,14 @@ angular.module('starter')
     .controller('MenuCtrl', function($scope, $timeout) {
 
     })
-    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup) {
+    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover) {
         console.log('params: ', $stateParams.topicId);
+
+        $ionicPopover.fromTemplateUrl('templates/popover.html', {
+            scope: $scope,
+        }).then(function(popover) {
+            $scope.popover = popover;
+        });
 
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
@@ -15,11 +21,19 @@ angular.module('starter')
                     });
                 };
 
-                $scope.openHuni = function() {
+                $scope.openHuni = function(id) {
+                    console.log('id: ', id);
+                    $scope.popover.hide();
+                    $state.go('app.sounds', {
+                        'topicId': 'huni-' + id
+                    });
+                };
+
+                /*$scope.openHuni = function() {
                     console.log('app.huni');
                     // $state.go('app.huni');
                     $location.path('/app/huni')
-                };
+                };*/
 
                 $scope.showKunla = function() {
                     var alertPopup = $ionicPopup.alert({
@@ -66,6 +80,18 @@ angular.module('starter')
                 };
             }
         }
+
+        $scope.$on('$destroy', function() {
+            $scope.popover.remove();
+        });
+        // Execute action on hide popover
+        $scope.$on('popover.hidden', function() {
+            // Execute action
+        });
+        // Execute action on remove popover
+        $scope.$on('popover.removed', function() {
+            // Execute action
+        });
     })
     .controller('PlaylistCtrl', function($scope, $stateParams, $ionicLoading, $window, Helpers) {
         console.log('params: ', $stateParams.topicId);

@@ -6,7 +6,7 @@
                 <h2>Mga Letra</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>
-            <ion-item ng-click="openHuni()" href="#" class="item item-avatar item-icon-right">
+            <ion-item ng-click="popover.show($event)" href="#" class="item item-avatar item-icon-right">
                 <img src="img/fs-file.png">
                 <h2>Mga Huni</h2>
                 <i class="icon ion-chevron-right royal"></i>
@@ -24,3 +24,15 @@
         </ion-list>
     </ion-content>
 </ion-view>
+<script id="templates/popover.html" type="text/ng-template">
+    <ion-popover-view style="height: 160px;">
+        <ion-content class="padding">
+            <button class="button button-block button-positive" ng-click="openHuni('sapat')">
+                Mga Sapat
+            </button>
+            <button class="button button-block button-positive" ng-click="openHuni('butang')">
+                Mga Butang
+            </button>
+        </ion-content>
+    </ion-popover-view>
+</script>

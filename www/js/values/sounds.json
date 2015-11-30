@@ -3,125 +3,248 @@
     "artist": "",
     "art": "img/lessons/tunog/picture/dog.jpg",
     "url": "img/lessons/tunog/sound/dog.wav",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Aw aw",
+    "ngstyle": {
+        "border": "2px solid #FFD966",
+        "border-radius": "8px",
+        "background-color": "#945D4E"
+    }
 },{
     "title": "Pispis",
     "artist": "",
     "art": "img/lessons/tunog/picture/bird.jpg",
-    "url": "",
-    "category": "sapat"
+    "url": "img/lessons/tunog/sound/bird.mp3",
+    "category": "sapat",
+    "sound": "Tweet Tweet",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Karabaw",
     "artist": "",
     "art": "img/lessons/tunog/picture/carabao.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#0D0D0D",
+        "color":"#FFF"
+    }
 },{
     "title": "Kuring",
     "artist": "",
     "art": "img/lessons/tunog/picture/cats.jpg",
     "url": "img/lessons/tunog/sound/cat.mp3",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Meow meow",
+    "ngstyle": {
+        "border": "2px solid #0D0D0D",
+        "border-radius": "8px",
+        "background-color": "#7F7F7F"
+    }
 },{
     "title": "Baka",
     "artist": "",
     "art": "img/lessons/tunog/picture/cow.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #0D0D0D",
+        "border-radius": "8px",
+        "background-color": "#66CCFF"
+    }
 },{
     "title": "Tambol",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (1).jpg",
     "url": "img/lessons/tunog/sound/drum.mp3",
-    "category": "butang"
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Maracas",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (2).jpg",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/maracas.mp3",
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Gitara",
     "artist": "",
     "art": "img/lessons/tunog/picture/download (3).jpg",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/gitara.mp3",
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Pato",
     "artist": "",
     "art": "img/lessons/tunog/picture/duck.jpg",
     "url": "img/lessons/tunog/sound/duck.mp3",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Kwak kwak",
+    "ngstyle": {
+        "border": "2px solid #7F6000",
+        "border-radius": "8px",
+        "background-color": "#FFD966"
+    }
 },{
     "title": "Paka",
     "artist": "",
     "art": "img/lessons/tunog/picture/frog.jpg",
     "url": "img/lessons/tunog/sound/frog.mp3",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Kokak kokak",
+    "ngstyle": {
+        "border": "2px solid #7F6000",
+        "border-radius": "8px",
+        "background-color": "#70AD47"
+    }
 },{
     "title": "Kanbing",
     "artist": "",
     "art": "img/lessons/tunog/picture/goat.jpg",
     "url": "img/lessons/tunog/sound/goat.mp3",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Mee mee",
+    "ngstyle": {
+        "border": "2px solid #C2B45E",
+        "border-radius": "8px",
+        "background-color": "#FFFFCC"
+    }
 },{
     "title": "Simbals",
     "artist": "",
     "art": "img/lessons/tunog/picture/images (2).jpg",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/cymbal.mp3",
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
-    "title": "Unggoy",
+    "title": "Amu",
     "artist": "",
     "art": "img/lessons/tunog/picture/monkey.jpg",
-    "url": "",
-    "category": "sapat"
+    "url": "img/lessons/tunog/sound/amu.mp3",
+    "category": "sapat",
+    "sound": "Oh oh ah ah",
+    "ngstyle": {
+        "border": "2px solid #FFD966",
+        "border-radius": "8px",
+        "background-color": "#2E75B6"
+    }
 },{
     "title": "Baboy",
     "artist": "",
     "art": "img/lessons/tunog/picture/pigs.jpg",
     "url": "img/lessons/tunog/sound/pig.wav",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Oink oink",
+    "ngstyle": {
+        "border": "2px solid #0D0D0D",
+        "border-radius": "8px",
+        "background-color": "#FF66CC"
+    }
 },{
     "title": "Man-og",
     "artist": "",
     "art": "img/lessons/tunog/picture/snake.jpg",
     "url": "img/lessons/tunog/sound/snake.wav",
-    "category": "sapat"
+    "category": "sapat",
+    "sound": "Sssssss",
+    "ngstyle": {
+        "border": "2px solid #0D0D0D",
+        "border-radius": "8px",
+        "background-color": "#00FF00"
+    }
 },{
     "title": "Orasan",
     "artist": "",
-    "art": "img/lessons/tunog/picture/Orasan.png",
+    "art": "img/lessons/tunog/picture/orasan.png",
     "url": "",
-    "category": "butang"
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Bola",
     "artist": "",
     "art": "img/lessons/tunog/picture/bola.png",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/ball.mp3",
+    "category": "butang",
+    "sound": "",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Telepono",
     "artist": "",
     "art": "img/lessons/tunog/picture/telepono.png",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/telepono.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Kampana",
     "artist": "",
     "art": "img/lessons/tunog/picture/kampana.png",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/bell.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Ambulansya",
     "artist": "",
     "art": "img/lessons/tunog/picture/ambulansya.png",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/ambulance.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 },{
     "title": "Trumpeta",
     "artist": "",
     "art": "img/lessons/tunog/picture/trumpeta.png",
-    "url": "",
-    "category": "butang"
+    "url": "img/lessons/tunog/sound/trumpeta.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
 }]

@@ -9,11 +9,6 @@
     "translation": "",
     "sample": "img/lessons/letters/pictures/baga (3).jpg"
 }, {
-    "name": "C",
-    "img":"img/lessons/letters/letters/c.jpg",
-    "translation": "",
-    "sample": ""
-}, {
     "name": "D",
     "img":"img/lessons/letters/letters/d.jpg",
     "translation": "",
@@ -23,12 +18,7 @@
     "img":"img/lessons/letters/letters/e.jpg",
     "translation": "",
     "sample": "img/lessons/letters/pictures/elisi.png"
-}, {
-    "name": "F",
-    "img":"img/lessons/letters/letters/f.jpg",
-    "translation": "",
-    "sample": ""
-}, {
+},{
     "name": "G",
     "img":"img/lessons/letters/letters/g.jpg",
     "translation": "",
@@ -43,11 +33,6 @@
     "img":"img/lessons/letters/letters/i.jpg",
     "translation": "",
     "sample": "img/lessons/letters/pictures/final.jpg"
-}, {
-    "name": "J",
-    "img":"img/lessons/letters/letters/j.jpg",
-    "translation": "",
-    "sample": ""
 }, {
     "name": "K",
     "img":"img/lessons/letters/letters/k.jpg",
@@ -84,11 +69,6 @@
     "translation": "",
     "sample": "img/lessons/letters/pictures/pispis1.jpg"
 }, {
-    "name": "Q",
-    "img":"img/lessons/letters/letters/q.jpg",
-    "translation": "",
-    "sample": ""
-}, {
     "name": "R",
     "img":"img/lessons/letters/letters/r.jpg",
     "translation": "",
@@ -98,16 +78,6 @@
     "img":"img/lessons/letters/letters/s.jpg",
     "translation": "",
     "sample": "img/lessons/letters/pictures/sulo.png"
-}, {
-    "name": "T",
-    "img":"img/lessons/letters/letters/t.jpg",
-    "translation": "",
-    "sample": ""
-}, {
-    "name": "U",
-    "img":"img/lessons/letters/letters/u.jpg",
-    "translation": "",
-    "sample": "img/lessons/letters/pictures/uma.jpg"
 }, {
     "name": "V",
     "img":"img/lessons/letters/letters/v.jpg",
@@ -119,18 +89,8 @@
     "translation": "",
     "sample": "img/lessons/letters/pictures/wasay.jpg"
 }, {
-    "name": "X",
-    "img":"img/lessons/letters/letters/x.jpg",
-    "translation": "",
-    "sample": ""
-}, {
     "name": "Y",
     "img":"img/lessons/letters/letters/y.jpg",
     "translation": "",
     "sample": "img/lessons/letters/pictures/yabe.jpg"
-}, {
-    "name": "Z",
-    "img":"img/lessons/letters/letters/z.jpg",
-    "translation": "",
-    "sample": ""
 }]
