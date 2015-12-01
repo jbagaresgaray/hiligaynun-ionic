@@ -1,9 +1,81 @@
 [{
-    "ans": 1,
-    "img": "img/lessons/letters/pictures/uma.jpg",
-    "choices": [{
-        "img": "img/lessons/letters/letters/d.jpg"
-    },{
-        "img": "img/lessons/letters/letters/u.jpg"
-    }]
+    "word": "_ayong kag _ana",
+    "img": "img/lessons/letters/pictures/1.jpg",
+    "complete": "Pana kag Payong",
+    "answer": ["P"]
+},{
+    "word": "__aroto sa __aybay",
+    "img": "img/lessons/letters/pictures/2.jpg",
+    "complete":"Baroto sa Baybay",
+    "answer": ["B"]
+},{
+    "word": "_alag nga _ahon",
+    "img": "img/lessons/letters/pictures/3.jpg",
+    "complete":"Dalag nga Dahon",
+    "answer": ["D"]
+},{
+    "word": "_along",
+    "img": "img/lessons/letters/pictures/4.jpg",
+    "complete":"Talong",
+    "answer": ["T"]
+},{
+    "word": "_pat",
+    "img": "img/lessons/letters/pictures/5.jpg",
+    "complete":"Apat",
+    "answer": ["A"]
+},{
+    "word": "_uga",
+    "img": "img/lessons/letters/pictures/6.jpg",
+    "complete":"Suga",
+    "answer": ["S"]
+},{
+    "word": "_sa",
+    "img": "img/lessons/letters/pictures/7.jpg",
+    "complete":"Isa",
+    "answer": ["I"]
+},{
+    "word": "_gi",
+    "img": "img/lessons/letters/pictures/8.jpg",
+    "complete":"Igi",
+    "answer": ["I"]
+},{
+    "word": "__rasan",
+    "img": "img/lessons/letters/pictures/9.jpg",
+    "complete":"Orasan",
+    "answer": ["O"]
+},{
+    "word": "__apa sa la_esa",
+    "img": "img/lessons/letters/pictures/10.jpg",
+    "complete":"Mapa sa lamesa",
+    "answer": ["M"]
+},{
+    "word": "__aka sa __apa",
+    "img": "img/lessons/letters/pictures/11.jpg",
+    "complete":"Paka sa sapa",
+    "answer": ["P","S"]
+},{
+    "word": "__kra",
+    "img": "img/lessons/letters/pictures/12.jpg",
+    "complete":"Okra",
+    "answer": ["O"]
+},{
+    "word": "Um_",
+    "img": "img/lessons/letters/pictures/13.jpg",
+    "complete":"Uma",
+    "answer": ["A"]
+},{
+    "word": "Kimpi_",
+    "img": "img/lessons/letters/pictures/14.jpg",
+    "complete":"Kimpit",
+    "answer": ["T"]
+},{
+    "word": "__ga",
+    "img": "img/lessons/letters/pictures/15.jpg",
+    "complete":"Uga",
+    "answer": ["U"]
+},{
+    "word": "_ola sa _andi",
+    "img": "img/lessons/letters/pictures/16.jpg",
+    "complete":"Bola sa Bandi",
+    "answer": ["B"]
 }]
