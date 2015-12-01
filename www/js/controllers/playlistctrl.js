@@ -38,7 +38,7 @@ angular.module('starter')
                 $scope.showKunla = function() {
                     var alertPopup = $ionicPopup.alert({
                         title: 'Meaning',
-                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        template: '<b>Kunla</b> - <i>ang pag tunga sang pag mitlang sang tinaga sa pag basa sa natural nga pamaagi</i>.'
                     });
 
                     alertPopup.then(function(res) {
@@ -51,7 +51,7 @@ angular.module('starter')
                 $scope.showSuli = function() {
                     var alertPopup = $ionicPopup.alert({
                         title: 'Meaning',
-                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        template: '<b>Parehas</b>- ang tinaga o dinalan nga may pareho nga kaulugan o ambotsilingon sa isa ka tinaga <br></br> <b>Kasuli</b> - mga  tinaga nga may kasuli nga  kahulugan o ambotsinlingon, gatumod mn sang tinaga nga lain sa isa ka tinaga.'
                     });
 
                     alertPopup.then(function(res) {
