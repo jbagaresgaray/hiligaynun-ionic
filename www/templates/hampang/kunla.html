@@ -5,10 +5,10 @@
                 <h1 class="text-center">{{questions.title}}</h1>
             </div>
         </div>
-        <div class="list">
-            <ion-radio ng-repeat="answer in questions.choices" ng-value="answer.choice" ng-model="answer.checked" ng-click="serverSideChange($index,answer,questions)">
+        <div class="list card kunla">
+            <button class="button button-block" ng-repeat="answer in questions.choices"  ng-style="{{answer.style}}" >
                 {{answer.choice}}
-            </ion-radio>
+            </button>
         </div>
     </ion-content>
     <div class="bar bar-footer stable-bg">

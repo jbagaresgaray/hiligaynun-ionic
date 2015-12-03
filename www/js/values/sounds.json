@@ -183,7 +183,7 @@
     "title": "Orasan",
     "artist": "",
     "art": "img/lessons/tunog/picture/orasan.png",
-    "url": "",
+    "url": "img/lessons/tunog/sound/clock.mp3",
     "category": "butang",
     "sound": "",
     "ngstyle": {
@@ -241,6 +241,39 @@
     "artist": "",
     "art": "img/lessons/tunog/picture/trumpeta.png",
     "url": "img/lessons/tunog/sound/trumpeta.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
+},{
+    "title": "Pito",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/pito.png",
+    "url": "img/lessons/tunog/sound/pito.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
+},{
+    "title": "Motor",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/motor.png",
+    "url": "img/lessons/tunog/sound/motor.mp3",
+    "category": "butang",
+    "ngstyle": {
+        "border": "2px solid #7F7F7F",
+        "border-radius": "8px",
+        "background-color": "#663300"
+    }
+},{
+    "title": "Violen",
+    "artist": "",
+    "art": "img/lessons/tunog/picture/violen.png",
+    "url": "img/lessons/tunog/sound/violen.mp3",
     "category": "butang",
     "ngstyle": {
         "border": "2px solid #7F7F7F",

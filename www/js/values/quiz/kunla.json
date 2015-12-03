@@ -1,15 +1,451 @@
 [{
-    "ans": 2,
-    "title": "Lata",
+    "title": "Duha ka ____",
+    "img":"img/quiz/kunla/1.png",
+    "ans": "amu",
+    "phrase":"Duha ka amu",
     "choices": [{
-        "choice": "L-ata",
-        "checked": false
+        "choice": "bagay",
+        "checked": false,
+        "style": {
+            "border": "2px solid #2F528F",
+            "border-radius": "5px",
+            "background-color": "#4472C4"
+        }
     }, {
-        "choice": "Lat-a",
-        "checked": false
+        "choice": "amu",
+        "checked": false,
+        "style": {
+            "border": "2px solid #FFFFFF",
+            "border-radius": "5px",
+            "background-color": "#70AD47"
+        }
     }, {
-        "choice": "La-ta",
-        "checked": false
+        "choice": "salakyan",
+        "checked": false,
+        "style": {
+            "border": "2px solid #BFA36E",
+            "border-radius": "5px",
+            "background-color": "#E9B900"
+        }
+    }]
+},{
+    "title": "Nipa nga ___",
+    "img":"img/quiz/kunla/2.png",
+    "ans": "balay",
+    "phrase":"Nipa nga balay",
+    "choices": [{
+        "choice": "balay",
+        "checked": false,
+        "style": {
+            "border": "2px solid #FDD996",
+            "border-radius": "5px",
+            "background-color": "#F57D2D"
+        }
+    }, {
+        "choice": "libre",
+        "checked": false,
+        "style": {
+            "border": "2px solid #9E8552",
+            "border-radius": "5px",
+            "background-color": "#A4A4A4"
+        }
+    }, {
+        "choice": "lapis",
+        "checked": false,
+        "style": {
+            "border": "2px solid #9E8552",
+            "border-radius": "5px",
+            "background-color": "#A2CC8E"
+        }
+    }]
+},{
+    "title": "I__ga",
+    "img":"img/quiz/kunla/3.png",
+    "ans": "la",
+    "phrase":"Ilaga",
+    "choices": [{
+        "choice": "sa",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#9FBFE5"
+        }
+    }, {
+        "choice": "la",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#C55A11"
+        }
+    }, {
+        "choice": "bu",
+        "checked": false,
+        "style": {
+            "border": "2px solid #ED7D31",
+            "border-radius": "5px",
+            "background-color": "#FFFFFF"
+        }
+    }]
+},{
+    "title": "Malapad nga _____",
+    "img":"img/quiz/kunla/4.png",
+    "ans": "dalan",
+    "phrase":"Malapad nga dalan",
+    "choices": [{
+        "choice": "isla",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#00B050"
+        }
+    }, {
+        "choice": "langit",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#C55A11"
+        }
+    }, {
+        "choice": "dalan",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#7F6000"
+        }
+    }]
+},{
+    "title": "_____ sa sapa",
+    "img":"img/quiz/kunla/5.png",
+    "ans": "Pato",
+    "phrase":"Pato sa sapa",
+    "choices": [{
+        "choice": "Baroto",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#BF9000"
+        }
+    }, {
+        "choice": "Pato",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#C00000"
+        }
+    }, {
+        "choice": "Baka",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#00B0F0"
+        }
+    }]
+},{
+    "title": "Ka__tis",
+    "img":"img/quiz/kunla/6.png",
+    "ans": "ma",
+    "phrase":"Kamatis",
+    "choices": [{
+        "choice": "ma",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#203864"
+        }
+    }, {
+        "choice": "la",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#7030A0"
+        }
+    }, {
+        "choice": "ta",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FFC000"
+        }
+    }]
+},{
+    "title": "Puti nga ______",
+    "img":"img/quiz/kunla/7.png",
+    "ans": "ngipon",
+    "phrase":"Puti nga ngipon",
+    "choices": [{
+        "choice": "dinding",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#F60A53"
+        }
+    }, {
+        "choice": "ngipon",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#A9D18E"
+        }
+    }, {
+        "choice": "bayo",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#0AC637"
+        }
+    }]
+},{
+    "title": "Ang kar__",
+    "img":"img/quiz/kunla/8.png",
+    "ans": "ne",
+    "phrase":"Ang karne",
+    "choices": [{
+        "choice": "ma",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#B78A49"
+        }
+    }, {
+        "choice": "pa",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#7030A0"
+        }
+    }, {
+        "choice": "ne",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#166DEE"
+        }
+    }]
+},{
+    "title": "____nga",
+    "img":"img/quiz/kunla/9.png",
+    "ans": "nga",
+    "phrase":"Nganga",
+    "choices": [{
+        "choice": "ngo",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FA0674"
+        }
+    }, {
+        "choice": "nga",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#9DC3E6"
+        }
+    }, {
+        "choice": "ngi",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#BF9000"
+        }
+    }]
+},{
+    "title": "Nagalupad nga _______",
+    "img":"img/quiz/kunla/10.png",
+    "ans": "eroplano",
+    "phrase":"Nagalupad nga eroplano",
+    "choices": [{
+        "choice": "eroplano",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#24DCD3"
+        }
+    }, {
+        "choice": "pispis",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#3B3838"
+        }
+    }, {
+        "choice": "bola",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#A61616"
+        }
+    }]
+},{
+    "title": "Ga___",
+    "img":"img/quiz/kunla/11.png",
+    "ans": "ta",
+    "phrase":"Gata",
+    "choices": [{
+        "choice": "pa",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#A9D18E"
+        }
+    }, {
+        "choice": "na",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#7030A0"
+        }
+    }, {
+        "choice": "ta",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#7F6000"
+        }
+    }]
+},{
+    "title": "___bid",
+    "img":"img/quiz/kunla/12.png",
+    "ans": "Lu",
+    "phrase":"Lubid",
+    "choices": [{
+        "choice": "Ta",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#BCEBF0"
+        }
+    }, {
+        "choice": "Lu",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FD6384"
+        }
+    }, {
+        "choice": "Sa",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#002060"
+        }
+    }]
+},{
+    "title": "Yo___",
+    "img":"img/quiz/kunla/13.png",
+    "ans": "yo",
+    "phrase":"Yoyo",
+    "choices": [{
+        "choice": "yo",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FFCCFF"
+        }
+    }, {
+        "choice": "be",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#CC00CC"
+        }
+    }, {
+        "choice": "la",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#D6D7DB"
+        }
+    }]
+},{
+    "title": "___yabas",
+    "img":"img/quiz/kunla/14.png",
+    "ans": "Ba",
+    "phrase":"Bayabas",
+    "choices": [{
+        "choice": "Ta",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#CCCC00"
+        }
+    }, {
+        "choice": "Na",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FF9900"
+        }
+    }, {
+        "choice": "Ba",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#916E48"
+        }
+    }]
+},{
+    "title": "__il",
+    "img":"img/quiz/kunla/14.png",
+    "ans": "Ti",
+    "phrase":"Tiil",
+    "choices": [{
+        "choice": "Ti",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#009999"
+        }
+    }, {
+        "choice": "Sa",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#993366"
+        }
+    }, {
+        "choice": "Ya",
+        "checked": false,
+        "style": {
+            "border": "2px solid #5B9BD5",
+            "border-radius": "5px",
+            "background-color": "#FFFFCC"
+        }
     }]
 }]
-
