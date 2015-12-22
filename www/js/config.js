@@ -34,9 +34,6 @@ angular.module('starter')
                     }
                 }
             })
-
-
-
             .state('app.playlists', {
                 url: '/playlists/:topicId',
                 views: {
@@ -133,10 +130,6 @@ angular.module('starter')
                     }
                 }
             })
-
-
-
-
             .state('app.quizLetter', {
                 url: '/quiz/letter',
                 views: {
@@ -177,12 +170,6 @@ angular.module('starter')
                     }
                 }
             })
-
-
-
-
-
-
             .state('app.info', {
                 url: '/info',
                 views: {

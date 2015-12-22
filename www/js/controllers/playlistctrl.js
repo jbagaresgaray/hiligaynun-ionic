@@ -2,7 +2,7 @@
 
 angular.module('starter')
     .controller('MenuCtrl', function($scope, $timeout) {
-
+        
     })
     .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover) {
         console.log('params: ', $stateParams.topicId);
@@ -15,6 +15,7 @@ angular.module('starter')
 
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
+
                 $scope.openLetra = function() {
                     $state.go('app.single', {
                         'topicId': 'letra'

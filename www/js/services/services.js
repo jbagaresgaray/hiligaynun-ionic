@@ -46,6 +46,11 @@ angular.module('starter')
                 return $http.get('js/values/quiz/wording.json').then(function(data) {
                     return data.data;
                 });
+            },
+            shuffle: function(){
+                return $http.get('js/values/quiz/shuffle.json').then(function(data){
+                    return data.data;
+                })
             }
         };
     });

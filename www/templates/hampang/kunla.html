@@ -3,19 +3,13 @@
         <div class="list card">
             <div class="item item-body">
                 <h1 class="text-center">{{questions.title}}</h1>
+                <img class="full-image" ng-src="{{questions.img}}">
             </div>
         </div>
         <div class="list card kunla">
-            <button class="button button-block" ng-repeat="answer in questions.choices"  ng-style="{{answer.style}}" >
+            <button class="button button-block" ng-repeat="answer in questions.choices" ng-class="{'button-balanced':$index == 0,'button-calm':$index==1,'button-energized':$index==2}">
                 {{answer.choice}}
             </button>
         </div>
     </ion-content>
-    <div class="bar bar-footer stable-bg">
-        <div class="button-bar button-assertive">
-            <a class="button button-positive" ng-click="previousquestion()">PREV</a>
-            <a class="button button-assertive" ng-click="home()">HOME</a>
-            <a class="button button-positive" ng-click="nextquestion()">NEXT</a>
-        </div>
-    </div>
 </ion-view>

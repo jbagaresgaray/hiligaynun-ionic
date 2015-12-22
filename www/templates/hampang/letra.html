@@ -1,20 +1,38 @@
 <ion-view view-title="Letra" hide-back-button="true" ng-controller="letraCtrl">
-    <ion-content scroll="false">
-        <h4 class="text-center">
-            E Drag ang imahe sa tamang sagot
-        </h4>
+    <ion-content class="padding">
+        <small class="text-center assertive">
+            Pili-a sa kahon ang insakto nga letra basi sa laragway nga gina pakita kag e butang sa blangko ang husto nga sabat.
+        </small>
         <div class="list">
-             <div class="item item-body">
-                <img class="full-image" ng-src="{{letra.img}}" ng-drag="true" ng-drag-data="letra" data-allow-transform="true">
-            </div> 
-            
+            <div class="item item-body">
+                <h1 class="text-center">{{letra.word}}</h1>
+                <img class="full-image" ng-src="{{letra.img}}" style="height:220px;">
+            </div>
         </div>
-        <div class="list card" ng-repeat="obj in letra.choices">
-            <a class="item item-avatar" ng-drop="true" ng-drop-success="onDropComplete1($data,$event,{{$index}})" ng-center-anchor="{{centerAnchor}}">
-                <img class="avatar" ng-src="{{obj.img}}">
-                <img class="full-image" ng-src="{{selected_image}}" ng-show="selected_image.length > 0" ng-if="$index == index">
-            </a>
+        <div class="row text-center" ng-repeat="value in shuffle track by $index" ng-if="$index % 4 === 0">
+            <div class="col" ng-if="$index < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index])"  ng-class="!shuffle[$index].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 1 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 1])" ng-class="!shuffle[$index + 1].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 1].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 2 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 2])" ng-class="!shuffle[$index + 2].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 2].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 3 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 3])" ng-class="!shuffle[$index + 3].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 3].value}}
+                </button>
+            </div>
         </div>
-        
+        <button class="button button-block button-balanced">
+          Submit
+        </button>
     </ion-content>
 </ion-view>
