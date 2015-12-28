@@ -1,12 +1,12 @@
 <ion-view view-title="Hiligaynon Krush">
     <ion-content ng-class="{expanded:isExpanded}">
         <ion-list>
-            <ion-item ng-click="openLetra()" href="#" class="item item-avatar item-icon-right">
+            <ion-item ng-click="openLetra()" href="#" class="item item-avatar item-icon-right" ng-show="ngShow.letra">
                 <img src="img/logo.png">
                 <h2>Mga Letra</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>
-            <ion-item ng-click="popover.show($event)" href="#" class="item item-avatar item-icon-right">
+            <ion-item ng-click="popover.show($event)" href="#" class="item item-avatar item-icon-right" ng-show="ngShow.huni">
                 <img src="img/fs-file.png">
                 <h2>Mga Huni</h2>
                 <i class="icon ion-chevron-right royal"></i>
@@ -16,7 +16,7 @@
                 <h2>Kunla / Syllables</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>
-            <ion-item ng-click="showSuli()" href="#" class="item item-avatar item-icon-right">
+            <ion-item ng-click="showSuli()" href="#" class="item item-avatar item-icon-right" ng-show="ngShow.suli">
                 <img src="img/material3.jpg">
                 <h2>Parehas kag Suli</h2>
                 <i class="icon ion-chevron-right royal"></i>
@@ -27,10 +27,10 @@
 <script id="templates/popover.html" type="text/ng-template">
     <ion-popover-view style="height: 160px;">
         <ion-content class="padding">
-            <button class="button button-block button-positive" ng-click="openHuni('sapat')">
+            <button class="button button-block button-positive" ng-click="openHuni('sapat')"  ng-show="ngShow.sapat">
                 Mga Sapat
             </button>
-            <button class="button button-block button-positive" ng-click="openHuni('butang')">
+            <button class="button button-block button-positive" ng-click="openHuni('butang')"  ng-show="ngShow.butang">
                 Mga Butang
             </button>
         </ion-content>

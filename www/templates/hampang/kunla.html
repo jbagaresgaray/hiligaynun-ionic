@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="list card kunla">
-            <button class="button button-block" ng-repeat="answer in questions.choices" ng-class="{'button-balanced':$index == 0,'button-calm':$index==1,'button-energized':$index==2}">
+            <button class="button button-block" ng-repeat="answer in questions.choices" ng-class="{'button-balanced':$index == 0,'button-calm':$index==1,'button-energized':$index==2}" ng-click="showLoading(answer)">
                 {{answer.choice}}
             </button>
         </div>

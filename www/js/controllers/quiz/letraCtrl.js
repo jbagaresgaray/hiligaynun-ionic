@@ -33,7 +33,7 @@ angular.module('starter')
             $scope.letraArr = shuffleArray(res);
             setTimeout(function() {
                 $scope.$apply(function() {
-                    $scope.letra = res[$scope.currentQuiz];
+                    $scope.letra = $scope.letraArr[$scope.currentQuiz];
                     console.log('letra: ', $scope.letra);
                 });
             }, 10);

@@ -16,6 +16,7 @@
     "lodash": "~3.10.1",
     "angular-dragdrop": "~1.0.12",
     "ngDraggable": "~0.1.8",
-    "angular-touch": "~1.4.7"
+    "angular-touch": "~1.4.7",
+    "ngCordova": "~0.1.23-alpha"
   }
 }

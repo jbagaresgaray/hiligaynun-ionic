@@ -30,7 +30,7 @@
     }]
 },{
     "title": "Nipa nga ___",
-    "img":"img/quiz/kunla/2.png",
+    "img":"img/quiz/kunla/2.jpg",
     "ans": "balay",
     "phrase":"Nipa nga balay",
     "choices": [{
@@ -60,7 +60,7 @@
     }]
 },{
     "title": "I__ga",
-    "img":"img/quiz/kunla/3.png",
+    "img":"img/quiz/kunla/3.jpg",
     "ans": "la",
     "phrase":"Ilaga",
     "choices": [{
@@ -90,7 +90,7 @@
     }]
 },{
     "title": "Malapad nga _____",
-    "img":"img/quiz/kunla/4.png",
+    "img":"img/quiz/kunla/4.jpg",
     "ans": "dalan",
     "phrase":"Malapad nga dalan",
     "choices": [{
@@ -120,7 +120,7 @@
     }]
 },{
     "title": "_____ sa sapa",
-    "img":"img/quiz/kunla/5.png",
+    "img":"img/quiz/kunla/5.jpg",
     "ans": "Pato",
     "phrase":"Pato sa sapa",
     "choices": [{
@@ -150,7 +150,7 @@
     }]
 },{
     "title": "Ka__tis",
-    "img":"img/quiz/kunla/6.png",
+    "img":"img/quiz/kunla/6.jpg",
     "ans": "ma",
     "phrase":"Kamatis",
     "choices": [{
@@ -180,7 +180,7 @@
     }]
 },{
     "title": "Puti nga ______",
-    "img":"img/quiz/kunla/7.png",
+    "img":"img/quiz/kunla/7.jpg",
     "ans": "ngipon",
     "phrase":"Puti nga ngipon",
     "choices": [{
@@ -210,7 +210,7 @@
     }]
 },{
     "title": "Ang kar__",
-    "img":"img/quiz/kunla/8.png",
+    "img":"img/quiz/kunla/8.jpg",
     "ans": "ne",
     "phrase":"Ang karne",
     "choices": [{
@@ -240,7 +240,7 @@
     }]
 },{
     "title": "____nga",
-    "img":"img/quiz/kunla/9.png",
+    "img":"img/quiz/kunla/9.jpg",
     "ans": "nga",
     "phrase":"Nganga",
     "choices": [{
@@ -270,7 +270,7 @@
     }]
 },{
     "title": "Nagalupad nga _______",
-    "img":"img/quiz/kunla/10.png",
+    "img":"img/quiz/kunla/10.jpg",
     "ans": "eroplano",
     "phrase":"Nagalupad nga eroplano",
     "choices": [{
@@ -300,7 +300,7 @@
     }]
 },{
     "title": "Ga___",
-    "img":"img/quiz/kunla/11.png",
+    "img":"img/quiz/kunla/11.jpg",
     "ans": "ta",
     "phrase":"Gata",
     "choices": [{
@@ -330,7 +330,7 @@
     }]
 },{
     "title": "___bid",
-    "img":"img/quiz/kunla/12.png",
+    "img":"img/quiz/kunla/12.jpg",
     "ans": "Lu",
     "phrase":"Lubid",
     "choices": [{
@@ -360,7 +360,7 @@
     }]
 },{
     "title": "Yo___",
-    "img":"img/quiz/kunla/13.png",
+    "img":"img/quiz/kunla/13.jpg",
     "ans": "yo",
     "phrase":"Yoyo",
     "choices": [{
@@ -390,7 +390,7 @@
     }]
 },{
     "title": "___yabas",
-    "img":"img/quiz/kunla/14.png",
+    "img":"img/quiz/kunla/14.jpg",
     "ans": "Ba",
     "phrase":"Bayabas",
     "choices": [{
@@ -420,7 +420,7 @@
     }]
 },{
     "title": "__il",
-    "img":"img/quiz/kunla/14.png",
+    "img":"img/quiz/kunla/15.jpg",
     "ans": "Ti",
     "phrase":"Tiil",
     "choices": [{

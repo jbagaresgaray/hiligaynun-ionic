@@ -16,6 +16,14 @@ angular.module('starter')
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
 
+                $scope.ngShow = {
+                    letra: true,
+                    huni:true,
+                    sapat: true,
+                    butang: true,
+                    suli:true
+                };
+
                 $scope.openLetra = function() {
                     $state.go('app.single', {
                         'topicId': 'letra'
@@ -63,6 +71,15 @@ angular.module('starter')
                 };
             } else {
                 console.log('else');
+
+                $scope.ngShow = {
+                    letra: true,
+                    huni:false,
+                    sapat: false,
+                    butang: false,
+                    suli:false
+                };
+
                 $scope.openLetra = function() {
                     console.log('openLetra');
                     $state.go('app.quizLetter');
@@ -101,7 +118,6 @@ angular.module('starter')
         $scope.syllables = {};
 
         $window.localStorage['data'] = {};
-
         if (!_.isUndefined($stateParams.topicId)) {
             switch ($stateParams.topicId) {
                 case 'letra':

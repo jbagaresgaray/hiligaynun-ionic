@@ -1,8 +1,7 @@
 'use strict';
 
-angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable'])
-
-.run(function($ionicPlatform) {
+angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable','ngCordova'])
+    .run(function($ionicPlatform) {
         $ionicPlatform.ready(function() {
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -19,6 +18,28 @@ angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable'])
             event.preventDefault();
             event.stopPropagation();
         });
+    })
+    .run(function(DB) {
+         DB.init();
+     })
+    .constant('DB_CONFIG', {
+        name: 'Hiligaynon',
+        tables: [{
+            name: 'scores',
+            columns: [{
+                name: 'id',
+                type: 'integer primary key AUTOINCREMENT'
+            }, {
+                name: 'topic',
+                type: 'text'
+            }, {
+                name: 'name',
+                type: 'text'
+            }, {
+                name: 'score',
+                type: 'text'
+            }]
+        }]
     })
     .config(function($ionicConfigProvider) {
         $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);;
