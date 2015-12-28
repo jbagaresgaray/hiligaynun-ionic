@@ -30,7 +30,8 @@ angular.module('starter')
                 url: '/scoreboard',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/scoreboard.html'
+                        templateUrl: 'templates/scoreboard.html',
+                        controller: 'scoreBoardCtrl'
                     }
                 }
             })
@@ -166,6 +167,16 @@ angular.module('starter')
                     'menuContent': {
                         templateUrl: 'templates/hampang/wording.html',
                         controller: 'wordingCtrl',
+                        cache: false
+                    }
+                }
+            })
+            .state('app.quizResult', {
+                url: '/quiz/result',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/result.html',
+                        controller: 'scoreCtrl',
                         cache: false
                     }
                 }

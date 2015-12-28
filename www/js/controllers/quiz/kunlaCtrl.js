@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('kunlaCtrl', function($window, $scope, $timeout, $ionicLoading, $ionicPopup, $ionicScrollDelegate, Quiz) {
+    .controller('kunlaCtrl', function($window, $scope, $state, $timeout, $ionicLoading, $ionicPopup, $ionicScrollDelegate, Quiz) {
         console.log('kunlaCtrl');
 
         $scope.questions = [];
@@ -76,11 +76,13 @@ angular.module('starter')
                     $timeout(function() {
                         $scope.$apply(function() {
                             console.log('$scope.currentQuiz: ',$scope.currentQuiz);
-                            console.log('$scope.questionsArr.length: ',$scope.questionsArr.length);
+                            console.log('$scope.questionsArr.length: ',($scope.questionsArr.length -1));
                             if ($scope.currentQuiz != ($scope.questionsArr.length -1)) {
                                 $scope.currentQuiz++;
                                 $scope.questions = $scope.questionsArr[$scope.currentQuiz];
-                                console.log('letra: ', $scope.questions);
+                            }else{
+                                console.log('go to result');
+                                $state.go('app.quizResult',{reload:true});
                             }
                             $ionicScrollDelegate.scrollTop();
                         });

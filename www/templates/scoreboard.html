@@ -1,5 +1,12 @@
-<ion-view view-title="Scoreboards">
-  <ion-content ng-class="{expanded:isExpanded}">
-    <h1>Scoreboards</h1>
-  </ion-content>
+<ion-view view-title="Score Board" ng-init="doRefresh()">
+    <ion-content>
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()">
+        </ion-refresher>
+        <div class="list">
+            <a class="item item-icon-left" ng-repeat="score in scores">
+                <i class="icon ion-person-stalker"></i> {{score.name}}
+                <span class="badge badge-assertive">{{score.score}}</span>
+            </a>
+        </div>
+    </ion-content>
 </ion-view>

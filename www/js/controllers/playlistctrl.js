@@ -4,7 +4,7 @@ angular.module('starter')
     .controller('MenuCtrl', function($scope, $timeout) {
         
     })
-    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover) {
+    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover, $window) {
         console.log('params: ', $stateParams.topicId);
 
         $ionicPopover.fromTemplateUrl('templates/popover.html', {
@@ -81,15 +81,29 @@ angular.module('starter')
                 };
 
                 $scope.openLetra = function() {
-                    console.log('openLetra');
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Letra',
+                        tag: 'letra'
+                    });
+
                     $state.go('app.quizLetter');
                 };
 
                 $scope.openHuni = function() {
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Huni',
+                        tag: 'huni'
+                    });
+
                     $state.go('app.quizHuni');
                 };
 
                 $scope.showKunla = function() {
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Kunla/Syllables',
+                        tag: 'kunla'
+                    });
+
                     $state.go('app.quizKunla');
                 };
 
@@ -158,12 +172,6 @@ angular.module('starter')
                     break;
                 case 'suli':
                     $ionicLoading.show();
-
-                    $scope.$parent.showHeader();
-                    $scope.$parent.clearFabs();
-                    $scope.isExpanded = false;
-                    $scope.$parent.setExpanded(false);
-
                     $scope.clientSideList = [{
                         text: "Suli",
                         value: "suli"

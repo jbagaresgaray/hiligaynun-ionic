@@ -1,9 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('scoreCtrl', function($scope, $timeout, $ionicHistory, $stateParams, $ionicPopup, $state, $window) {
-        $scope.id = $stateParams.topicId;
-
+    .controller('scoreCtrl', function($scope, $timeout, $ionicHistory, $stateParams, $ionicPopup, $state, $window, Score) {
         $scope.quiz = {
             title: '',
             phrase: '',
@@ -19,14 +17,14 @@ angular.module('starter')
 
         var scoreBoard = JSON.parse(window.localStorage['scoreBoard'] || {});
         var score = 0;
+        var topic = JSON.parse($window.localStorage.topic);
 
         for (var i = 0; i < scoreBoard.length; i++) {
             var ans = scoreBoard[i].ans;
             var mychoice = scoreBoard[i].choice;
-
+            var img = scoreBoard[i].img;
             var title = scoreBoard[i].title;
             var phrase = scoreBoard[i].phrase;
-            var choices = scoreBoard[i].choices;
             var iscorrect = scoreBoard[i].isCorrect;
 
             if (iscorrect) {
@@ -36,14 +34,15 @@ angular.module('starter')
             $scope.quiz = {
                 title: title,
                 phrase: phrase,
+                img: img,
                 answer: ans,
                 myans: mychoice,
                 correct: iscorrect
             };
 
             quizarray.push($scope.quiz);
-
         };
+
         $scope.results = quizarray;
         $scope.score = score;
         $scope.limit = quizarray.length;
@@ -74,14 +73,14 @@ angular.module('starter')
                             return;
                         } else {
                             var score = $scope.score + '/' + quizarray.length;
-                            Score.insert($scope.id, $scope.data.username, score).then(function(documents) {
+                            Score.insert(topic.tag, $scope.data.username, score).then(function(documents) {
                                 console.log(documents);
                                 if (documents) {
                                     var alertPopup = $ionicPopup.alert({
                                         title: 'Hiligaynon App',
                                         template: 'Record Successfully Saved'
                                     });
-                                    $state.go('app.topics');
+                                    $state.go('app.main');
                                 }
                             });
                         }
@@ -89,4 +88,17 @@ angular.module('starter')
                 }]
             });
         }
+    })
+    .controller('scoreBoardCtrl', function($scope, $window, Score) {
+        $scope.doRefresh = function() {
+            Score.all().then(function(response) {
+                    console.log('response: ', response);
+                    $scope.scores = response;
+                })
+                .finally(function() {
+                    // Stop the ion-refresher from spinning
+                    $scope.$broadcast('scroll.refreshComplete');
+                });
+
+        };
     });
