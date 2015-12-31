@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable','ngCordova'])
-    .run(function($ionicPlatform) {
+angular
+    .module('starter', ['ionic', 'ionic-audio', 'ngDraggable', 'ngCordova','cgBusy'])
+    .run(function($ionicPlatform, $state, $rootScope) {
         $ionicPlatform.ready(function() {
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -15,13 +16,22 @@ angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable','ngCordova'])
         });
 
         $ionicPlatform.onHardwareBackButton(function() {
-            event.preventDefault();
-            event.stopPropagation();
+            if ($state.current.name === 'app.quizKunla') {
+                event.preventDefault();
+                event.stopPropagation();
+            }
         });
+
+        $ionicPlatform.registerBackButtonAction(function(event) {
+            if ($state.current.name === 'app.quizKunla') {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        }, 100);
     })
     .run(function(DB) {
-         DB.init();
-     })
+        DB.init();
+    })
     .constant('DB_CONFIG', {
         name: 'Hiligaynon',
         tables: [{
@@ -43,5 +53,4 @@ angular.module('starter', ['ionic', 'ionic-audio', 'ngDraggable','ngCordova'])
     })
     .config(function($ionicConfigProvider) {
         $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);;
-    })
-    .constant('LETRA_GAME', ['B', 'D', 'A', 'P', 'M', 'S', 'O', 'D', 'M', 'T', 'A', 'I', 'O', 'P', 'S', 'I']);
+    });

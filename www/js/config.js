@@ -22,7 +22,8 @@ angular.module('starter')
                 url: '/settings',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/settings.html'
+                        templateUrl: 'templates/settings.html',
+                        controller: 'settingsCtrl'
                     }
                 }
             })
@@ -116,8 +117,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/kunla/kunla_detail.html',
-                        controller: 'PlaylistKunlaDetailCtrl',
-                        cache: false
+                        controller: 'PlaylistKunlaDetailCtrl'
                     }
                 }
             })
@@ -126,8 +126,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/wordings/wordingdetail.html',
-                        controller: 'PlaylistWordingDetailCtrl',
-                        cache: false
+                        controller: 'PlaylistWordingDetailCtrl'
                     }
                 }
             })
@@ -136,8 +135,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/letra.html',
-                        controller: 'letraCtrl',
-                        cache: false
+                        controller: 'letraCtrl'
                     }
                 }
             })
@@ -146,8 +144,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
-                        controller: 'huniCtrl',
-                        cache: false
+                        controller: 'huniCtrl'
                     }
                 }
             })
@@ -156,8 +153,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/kunla.html',
-                        controller: 'kunlaCtrl',
-                        cache: false
+                        controller: 'kunlaCtrl'
                     }
                 }
             })
@@ -166,8 +162,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/wording.html',
-                        controller: 'wordingCtrl',
-                        cache: false
+                        controller: 'wordingCtrl'
                     }
                 }
             })
@@ -176,8 +171,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/result.html',
-                        controller: 'scoreCtrl',
-                        cache: false
+                        controller: 'scoreCtrl'
                     }
                 }
             })

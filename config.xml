@@ -42,4 +42,5 @@
     </platform>
     <plugin name="cordova-sqlite-storage" spec="https://github.com/litehelpers/Cordova-sqlite-storage.git" />
     <plugin name="org.apache.cordova.media" spec="^0.2.16" />
+    <plugin name="cordova-plugin-nativeaudio" spec="https://github.com/SidneyS/cordova-plugin-nativeaudio.git" />
 </widget>

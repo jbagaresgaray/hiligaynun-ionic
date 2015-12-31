@@ -6,10 +6,11 @@
         <div class="list">
             <div class="item item-body">
                 <h1 class="text-center">{{letra.word}}</h1>
-                <img class="full-image" ng-src="{{letra.img}}" style="height:220px;">
+                <img class="full-image" ng-src="{{letra.img}}" style="height:210px;w">
             </div>
         </div>
         <div class="row text-center" ng-repeat="value in shuffle track by $index" ng-if="$index % 4 === 0">
+            <div cg-busy="myPromise"></div>
             <div class="col" ng-if="$index < shuffle.length">
                 <button class="button button-positive" ng-click="showLoading(shuffle[$index])"  ng-class="!shuffle[$index].selected ? 'button-positive' : 'button-dark'">
                    {{shuffle[$index].value}}
@@ -31,8 +32,5 @@
                 </button>
             </div>
         </div>
-        <button class="button button-block button-balanced">
-          Submit
-        </button>
     </ion-content>
 </ion-view>

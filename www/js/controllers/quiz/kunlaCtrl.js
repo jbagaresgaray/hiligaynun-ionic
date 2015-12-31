@@ -52,6 +52,7 @@ angular.module('starter')
                     var obj = {};
                     obj = $scope.questions;
                     obj.choice = value.choice;
+                    
                     if ($scope.questions.ans === value.choice) {
                         obj.isCorrect = true;
                         $scope.score++;

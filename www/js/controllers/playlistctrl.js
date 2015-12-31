@@ -1,9 +1,6 @@
 'use strict';
 
 angular.module('starter')
-    .controller('MenuCtrl', function($scope, $timeout) {
-        
-    })
     .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover, $window) {
         console.log('params: ', $stateParams.topicId);
 
@@ -86,7 +83,8 @@ angular.module('starter')
                         tag: 'letra'
                     });
 
-                    $state.go('app.quizLetter');
+                    // $state.go('app.quizLetter');
+                    $location.path('/app/quiz/letter');
                 };
 
                 $scope.openHuni = function() {
@@ -186,7 +184,6 @@ angular.module('starter')
 
                     Helpers.wordings().then(function(res) {
                         console.log('wordings: ', res.data);
-
                         $scope.wordings = _.filter(res.data, {
                             'category': $scope.data.clientSide
                         });

@@ -48,9 +48,9 @@ angular.module('starter')
         $scope.limit = quizarray.length;
 
         $scope.resetQuiz = function() {
-            $state.go('app.main', {}, {
-                reload: true
-            });
+            // $state.go('app.main');
+            window.location.href="#/app/main";
+            window.location.reload();
         };
 
         $scope.saveScore = function() {

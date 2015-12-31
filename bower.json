@@ -17,6 +17,7 @@
     "angular-dragdrop": "~1.0.12",
     "ngDraggable": "~0.1.8",
     "angular-touch": "~1.4.7",
-    "ngCordova": "~0.1.23-alpha"
+    "ngCordova": "~0.1.23-alpha",
+    "angular-busy": "~4.1.3"
   }
 }
