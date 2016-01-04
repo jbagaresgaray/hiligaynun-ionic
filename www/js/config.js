@@ -22,7 +22,8 @@ angular.module('starter')
                 url: '/settings',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/settings.html'
+                        templateUrl: 'templates/settings.html',
+                        controller: 'settingsCtrl'
                     }
                 }
             })
@@ -30,13 +31,11 @@ angular.module('starter')
                 url: '/scoreboard',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/scoreboard.html'
+                        templateUrl: 'templates/scoreboard.html',
+                        controller: 'scoreBoardCtrl'
                     }
                 }
             })
-
-
-
             .state('app.playlists', {
                 url: '/playlists/:topicId',
                 views: {
@@ -118,8 +117,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/kunla/kunla_detail.html',
-                        controller: 'PlaylistKunlaDetailCtrl',
-                        cache: false
+                        controller: 'PlaylistKunlaDetailCtrl'
                     }
                 }
             })
@@ -128,22 +126,16 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hibaluon/wordings/wordingdetail.html',
-                        controller: 'PlaylistWordingDetailCtrl',
-                        cache: false
+                        controller: 'PlaylistWordingDetailCtrl'
                     }
                 }
             })
-
-
-
-
             .state('app.quizLetter', {
                 url: '/quiz/letter',
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/letra.html',
-                        controller: 'letraCtrl',
-                        cache: false
+                        controller: 'letraCtrl'
                     }
                 }
             })
@@ -152,8 +144,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
-                        controller: 'huniCtrl',
-                        cache: false
+                        controller: 'huniCtrl'
                     }
                 }
             })
@@ -162,8 +153,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/kunla.html',
-                        controller: 'kunlaCtrl',
-                        cache: false
+                        controller: 'kunlaCtrl'
                     }
                 }
             })
@@ -171,18 +161,20 @@ angular.module('starter')
                 url: '/quiz/wording',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hampang/wordings.html',
-                        controller: 'wordingCtrl',
-                        cache: false
+                        templateUrl: 'templates/hampang/wording.html',
+                        controller: 'wordingCtrl'
                     }
                 }
             })
-
-
-
-
-
-
+            .state('app.quizResult', {
+                url: '/quiz/result',
+                views: {
+                    'menuContent': {
+                        templateUrl: 'templates/hampang/result.html',
+                        controller: 'scoreCtrl'
+                    }
+                }
+            })
             .state('app.info', {
                 url: '/info',
                 views: {

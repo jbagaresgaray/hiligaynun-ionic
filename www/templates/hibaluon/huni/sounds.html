@@ -1,8 +1,8 @@
 <ion-view view-title="Hiligaynon Krush">
     <ion-content ng-class="{expanded:isExpanded}">
         <ion-list>
-            <ion-item href="#/app/sounddetail/{{row.title}}" ng-repeat="row in sounds" class="item item-avatar item-icon-right">
-                <img ng-src="{{row.art}}">
+            <ion-item href="#/app/sounddetail/{{row.title}}" ng-repeat="row in sounds | orderBy:'title'" class="huni item item-thumbnail-left item-icon-right">
+                <img ng-src="{{row.art}}" class="img-thumbnail">
                 <h2>{{row.title}}</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>

@@ -1,0 +1,30 @@
+<ion-view view-title="Quiz Results" hide-back-button="true">
+    <ion-content padding="true">
+        <div class="card">
+            <div class="item item-divider">
+                Total Score
+            </div>
+            <div class="item item-text-wrap">
+                <h2>SCORE: <span>{{score}}/{{limit}}</span></h2>
+            </div>
+        </div>
+        <div class="card" ng-repeat="item in results">
+            <div class="item item-body">
+                <small>{{$index + 1}}.) {{item.title}} </small>
+            </div>
+            <div class="item item-body">
+                <strong>ANSWER: </strong><small>{{item.answer}}</small>
+            </div>
+            <div class="item item-icon-right">
+                <strong>{{item.myans}}</strong>
+                <i class="icon ion-close assertive" ng-hide="item.correct==true"></i>
+                <i class="icon ion-checkmark balanced" ng-hide="item.correct!=true"></i>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer positive-bg">
+        <a class="button ion-refresh button-assertive icon-right" ng-click="resetQuiz()">TRY AGAIN?</a>
+        <div class="title"></div>
+        <a class="button button-balanced ion-checkmark icon-right" ng-click="saveScore()">SAVE</a>
+    </div>
+</ion-view>

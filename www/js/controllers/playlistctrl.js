@@ -1,42 +1,50 @@
 'use strict';
 
 angular.module('starter')
-    .controller('MenuCtrl', function($scope, $timeout, ionicMaterialMotion, ionicMaterialInk) {
-        $scope.$parent.showHeader();
-        $scope.$parent.clearFabs();
-        $scope.isExpanded = false;
-        $scope.$parent.setExpanded(false);
-
-        $timeout(function() {
-            ionicMaterialMotion.fadeSlideIn({
-                selector: '.animate-fade-slide-in .item'
-            });
-        }, 200);
-
-        // Activate ink for controller
-        ionicMaterialInk.displayEffect();
-    })
-    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup) {
+    .controller('PlaylistsCtrl', function($scope, $stateParams, $location, $state, $ionicPopup, $ionicPopover, $window) {
         console.log('params: ', $stateParams.topicId);
+
+        $ionicPopover.fromTemplateUrl('templates/popover.html', {
+            scope: $scope,
+        }).then(function(popover) {
+            $scope.popover = popover;
+        });
 
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
+
+                $scope.ngShow = {
+                    letra: true,
+                    huni:true,
+                    sapat: true,
+                    butang: true,
+                    suli:true
+                };
+
                 $scope.openLetra = function() {
                     $state.go('app.single', {
                         'topicId': 'letra'
                     });
                 };
 
-                $scope.openHuni = function() {
+                $scope.openHuni = function(id) {
+                    console.log('id: ', id);
+                    $scope.popover.hide();
+                    $state.go('app.sounds', {
+                        'topicId': 'huni-' + id
+                    });
+                };
+
+                /*$scope.openHuni = function() {
                     console.log('app.huni');
                     // $state.go('app.huni');
                     $location.path('/app/huni')
-                };
+                };*/
 
                 $scope.showKunla = function() {
                     var alertPopup = $ionicPopup.alert({
                         title: 'Meaning',
-                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        template: '<b>Kunla</b> - <i>ang pag tunga sang pag mitlang sang tinaga sa pag basa sa natural nga pamaagi</i>.'
                     });
 
                     alertPopup.then(function(res) {
@@ -49,7 +57,7 @@ angular.module('starter')
                 $scope.showSuli = function() {
                     var alertPopup = $ionicPopup.alert({
                         title: 'Meaning',
-                        template: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        template: '<b>Parehas</b>- ang tinaga o dinalan nga may pareho nga kaulugan o ambotsilingon sa isa ka tinaga <br></br> <b>Kasuli</b> - mga  tinaga nga may kasuli nga  kahulugan o ambotsinlingon, gatumod mn sang tinaga nga lain sa isa ka tinaga.'
                     });
 
                     alertPopup.then(function(res) {
@@ -60,16 +68,40 @@ angular.module('starter')
                 };
             } else {
                 console.log('else');
+
+                $scope.ngShow = {
+                    letra: true,
+                    huni:false,
+                    sapat: false,
+                    butang: false,
+                    suli:false
+                };
+
                 $scope.openLetra = function() {
-                    console.log('openLetra');
-                    $state.go('app.quizLetter');
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Letra',
+                        tag: 'letra'
+                    });
+
+                    // $state.go('app.quizLetter');
+                    $location.path('/app/quiz/letter');
                 };
 
                 $scope.openHuni = function() {
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Huni',
+                        tag: 'huni'
+                    });
+
                     $state.go('app.quizHuni');
                 };
 
                 $scope.showKunla = function() {
+                    $window.localStorage.topic =  JSON.stringify({
+                        title: 'Kunla/Syllables',
+                        tag: 'kunla'
+                    });
+
                     $state.go('app.quizKunla');
                 };
 
@@ -78,6 +110,18 @@ angular.module('starter')
                 };
             }
         }
+
+        $scope.$on('$destroy', function() {
+            $scope.popover.remove();
+        });
+        // Execute action on hide popover
+        $scope.$on('popover.hidden', function() {
+            // Execute action
+        });
+        // Execute action on remove popover
+        $scope.$on('popover.removed', function() {
+            // Execute action
+        });
     })
     .controller('PlaylistCtrl', function($scope, $stateParams, $ionicLoading, $window, Helpers) {
         console.log('params: ', $stateParams.topicId);
@@ -86,7 +130,6 @@ angular.module('starter')
         $scope.syllables = {};
 
         $window.localStorage['data'] = {};
-
         if (!_.isUndefined($stateParams.topicId)) {
             switch ($stateParams.topicId) {
                 case 'letra':
@@ -127,12 +170,6 @@ angular.module('starter')
                     break;
                 case 'suli':
                     $ionicLoading.show();
-
-                    $scope.$parent.showHeader();
-                    $scope.$parent.clearFabs();
-                    $scope.isExpanded = false;
-                    $scope.$parent.setExpanded(false);
-
                     $scope.clientSideList = [{
                         text: "Suli",
                         value: "suli"
@@ -147,7 +184,6 @@ angular.module('starter')
 
                     Helpers.wordings().then(function(res) {
                         console.log('wordings: ', res.data);
-
                         $scope.wordings = _.filter(res.data, {
                             'category': $scope.data.clientSide
                         });

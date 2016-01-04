@@ -1,5 +1,36 @@
-<ion-view view-title="Letra">
-    <ion-content ng-class="{expanded:isExpanded}">
-        <h1>Letra</h1>
+<ion-view view-title="Letra" hide-back-button="true" ng-controller="letraCtrl">
+    <ion-content class="padding">
+        <small class="text-center assertive">
+            Pili-a sa kahon ang insakto nga letra basi sa laragway nga gina pakita kag e butang sa blangko ang husto nga sabat.
+        </small>
+        <div class="list">
+            <div class="item item-body">
+                <h1 class="text-center">{{letra.word}}</h1>
+                <img class="full-image" ng-src="{{letra.img}}" style="height:210px;w">
+            </div>
+        </div>
+        <div class="row text-center" ng-repeat="value in shuffle track by $index" ng-if="$index % 4 === 0">
+            <div cg-busy="myPromise"></div>
+            <div class="col" ng-if="$index < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index])"  ng-class="!shuffle[$index].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 1 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 1])" ng-class="!shuffle[$index + 1].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 1].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 2 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 2])" ng-class="!shuffle[$index + 2].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 2].value}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 3 < shuffle.length">
+                <button class="button button-positive" ng-click="showLoading(shuffle[$index + 3])" ng-class="!shuffle[$index + 3].selected ? 'button-positive' : 'button-dark'">
+                   {{shuffle[$index + 3].value}}
+                </button>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

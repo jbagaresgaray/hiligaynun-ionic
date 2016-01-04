@@ -1,52 +1,15 @@
-<ion-view view-title="Kunla">
-    <ion-content ng-class="{expanded:isExpanded}">
+<ion-view view-title="Kunla" hide-back-button="true">
+    <ion-content padding="true">
         <div class="list card">
             <div class="item item-body">
-                <img class="full-image" src="img/material-graphite.jpg">
-                <p>
-                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of tabs, icons aligned left, within the card-footer.
-                </p>
+                <h1 class="text-center">{{questions.title}}</h1>
+                <img class="full-image" ng-src="{{questions.img}}">
             </div>
-            <label class="item item-radio">
-                <input type="radio" name="group">
-                <div class="item-content">
-                    Go
-                </div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-            <label class="item item-radio">
-                <input type="radio" name="group">
-                <div class="item-content">
-                    Go
-                </div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-            <label class="item item-radio">
-                <input type="radio" name="group">
-                <div class="item-content">
-                    Go
-                </div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-            <label class="item item-radio">
-                <input type="radio" name="group">
-                <div class="item-content">
-                    Go
-                </div>
-                <i class="radio-icon ion-checkmark"></i>
-            </label>
-            <div class="row">
-                <div class="col">
-                    <button class="button button-block button-positive">
-                        Block Button
-                    </button>
-                </div>
-                <div class="col">
-                    <button class="button button-block button-balanced">
-                        Block Button
-                    </button>
-                </div>
-            </div>
+        </div>
+        <div class="list card kunla">
+            <button class="button button-block" ng-repeat="answer in questions.choices" ng-class="{'button-balanced':$index == 0,'button-calm':$index==1,'button-energized':$index==2}" ng-click="showLoading(answer)">
+                {{answer.choice}}
+            </button>
         </div>
     </ion-content>
 </ion-view>

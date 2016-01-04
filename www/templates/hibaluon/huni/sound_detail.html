@@ -4,18 +4,27 @@
             <ion-audio-track track="details">
                 <div class="list card">
                     <div class="item item-body">
-                        <center>
-                            <h1>{{details.title}}</h1>
+                        <center ng-style="{{details.ngstyle}}">
+                            <h1 class="details">{{details.title}}</h1>
                         </center>
                     </div>
                     <div class="item item-body">
                         <img class="full-image" ng-src="{{details.art}}">
                     </div>
-                    <div class="item item-body" ng-hide="details.url =='file:///android_asset/www/' || details.url =='file://'">
-                        <ion-audio-controls>
-                            <button class="button button-small button-assertive icon-left" ion-audio-play text-play="Play" text-pause="Pause"></button>
-                            <ion-spinner icon="ios" style="position: relative; top: 8px; left: 4px"></ion-spinner>
-                        </ion-audio-controls>
+                    <div class="item" style="padding: 0px !important;" ng-hide="details.url =='file:///android_asset/www/' || details.url =='file://'">
+                        <div class="row">
+                            <div class="col col-50">
+                                <ion-audio-controls>
+                                    <button class="button button-block button-small button-assertive icon-left" ion-audio-play text-play="Play" text-pause="Pause"></button>
+                                    <ion-spinner icon="ios" style="position: relative; top: 8px; left: 4px"></ion-spinner>
+                                </ion-audio-controls>
+                            </div>
+                            <div class="col col-50">
+                                <div class="gradient">
+                                    <h2 class="text-bold blink_me">{{details.sound}}</h2>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="item item-divider" ng-hide="details.url =='file:///android_asset/www/' || details.url =='file://'">
                         <ion-audio-progress-bar display-time></ion-audio-progress-bar>
