@@ -61,7 +61,7 @@ angular.module('starter')
                     } else {
                         obj.isCorrect = false;
                         heading = 'WRONG';
-                        template = '<div class="text-center"><img src="img/assets/wrong.png" width="100px;"></i><br><h1>' + value.choice + '</h1></div>';
+                        template = '<div class="text-center"><img src="img/assets/wrong.png" width="100px;"><br><h1>' + value.choice + '</h1></div>';
                     }
                     $scope.scoreBoard.push(obj);
                     $window.localStorage.scoreBoard = JSON.stringify($scope.scoreBoard);
