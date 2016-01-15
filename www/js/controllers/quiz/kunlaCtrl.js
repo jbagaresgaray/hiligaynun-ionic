@@ -57,11 +57,11 @@ angular.module('starter')
                         obj.isCorrect = true;
                         $scope.score++;
                         heading = 'CORRECT';
-                        template = '<div class="text-center"><i class="icon icon ion-checkmark balanced" style="font-size: 70px;"></i><br><h1>' + value.choice + '</h1></div>';
+                        template = '<div class="text-center"><img src="img/assets/correct.png" width="100px;"><br><h1>' + value.choice + '</h1></div>';
                     } else {
                         obj.isCorrect = false;
                         heading = 'WRONG';
-                        template = '<div class="text-center"><i class="icon icon ion-close assertive" style="font-size: 70px;"></i><br><h1>' + value.choice + '</h1></div>';
+                        template = '<div class="text-center"><img src="img/assets/wrong.png" width="100px;"></i><br><h1>' + value.choice + '</h1></div>';
                     }
                     $scope.scoreBoard.push(obj);
                     $window.localStorage.scoreBoard = JSON.stringify($scope.scoreBoard);
