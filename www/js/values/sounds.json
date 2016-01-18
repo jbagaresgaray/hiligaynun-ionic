@@ -275,16 +275,4 @@
         "border-radius": "8px",
         "background-color": "#663300"
     }
-},{
-    "title": "Violen",
-    "artist": "",
-    "art": "img/lessons/tunog/picture/violen.png",
-    "url": "img/lessons/tunog/sound/violen.mp3",
-    "category": "butang",
-    "sound": "eeeeeeee",
-    "ngstyle": {
-        "border": "2px solid #7F7F7F",
-        "border-radius": "8px",
-        "background-color": "#663300"
-    }
 }]
