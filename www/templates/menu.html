@@ -13,7 +13,7 @@
     </ion-side-menu-content>
     <ion-side-menu side="left">
         <ion-header-bar class="dark-bg" style="height: 130px;background: url('img/material-graphite.jpg'); background-size: cover;">
-          <img class="avatar" src="img/logo1.png"></span>
+          <img class="avatar" src="img/assets/applogo.png"></span>
           <h2 class="light">Hiligaynon Krush</h2>
         </ion-header-bar>
         <ion-content class="stable-bg" style="top:130px;">
@@ -37,6 +37,10 @@
                 <ion-item nav-clear menu-close ui-sref="app.author" class="item item-icon-left">
                     <i class="icon ion-person-stalker royal"></i>
                     Author
+                </ion-item>
+                <ion-item nav-clear menu-close class="item item-icon-left" ng-click="exit()">
+                    <i class="icon ion-android-exit dark"></i>
+                    Exit
                 </ion-item>
             </ion-list>
         </ion-content>

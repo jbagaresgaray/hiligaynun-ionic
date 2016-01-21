@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('scoreCtrl', function($scope, $timeout, $ionicHistory, $stateParams, $ionicPopup, $state, $window, Score) {
+    .controller('scoreCtrl', function($scope, $timeout, $ionicHistory, $stateParams, $ionicPopup, $state, $window, $ionicViewSwitcher, Score) {
         $scope.quiz = {
             title: '',
             phrase: '',
@@ -49,8 +49,15 @@ angular.module('starter')
 
         $scope.resetQuiz = function() {
             // $state.go('app.main');
-            window.location.href="#/app/main";
+            window.location.href = "#/app/main";
             window.location.reload();
+
+            $ionicHistory.nextViewOptions({
+                disableBack: true
+            });
+            $ionicViewSwitcher.nextDirection('back');
+            // $state.go('app.main');
+            window.location.href = "#/app/playlist/quiz";
         };
 
         $scope.saveScore = function() {
@@ -80,6 +87,11 @@ angular.module('starter')
                                         title: 'Hiligaynon App',
                                         template: 'Record Successfully Saved'
                                     });
+
+                                    $ionicHistory.nextViewOptions({
+                                        disableBack: true
+                                    });
+                                    $ionicViewSwitcher.nextDirection('back');
                                     $state.go('app.main');
                                 }
                             });

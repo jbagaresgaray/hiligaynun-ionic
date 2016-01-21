@@ -27,7 +27,11 @@ angular.module('starter')
                     });
                 };
 
-                $scope.openHuni = function(id) {
+                $scope.openHuni = function($event) {
+                    popover.show($event)
+                };
+
+                $scope.openHuni1 = function(id) {
                     console.log('id: ', id);
                     $scope.popover.hide();
                     $state.go('app.sounds', {
@@ -71,7 +75,7 @@ angular.module('starter')
 
                 $scope.ngShow = {
                     letra: true,
-                    huni:false,
+                    huni:true,
                     sapat: false,
                     butang: false,
                     suli:false

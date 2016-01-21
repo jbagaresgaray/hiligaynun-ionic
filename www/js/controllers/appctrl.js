@@ -5,10 +5,12 @@ angular.module('starter')
 
     })
     .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
+        $scope.exit = function() {
+            ionic.Platform.exitApp();
+        };
     })
     .controller('settingsCtrl', function($scope, $timeout) {
-    	$scope.changeVolume = function(){
-    		console.log('volume: ',$scope.volume);
-    	};
+        $scope.changeVolume = function() {
+            console.log('volume: ', $scope.volume);
+        };
     });

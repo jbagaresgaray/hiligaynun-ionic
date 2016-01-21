@@ -3,10 +3,6 @@
     "kunla": "La-ta",
     "img": "img/lessons/kunla/lata.png"
 }, {
-    "name": "Tabuli",
-    "kunla": "Ta-bu-li",
-    "img": ""
-}, {
     "name": "Ilaga",
     "kunla": "i-la-ga",
     "img": "img/lessons/kunla/ilaga.png"
@@ -55,22 +51,6 @@
     "kunla": "Nguy-ngoy",
     "img": "img/lessons/kunla/nguynguy.png"
 }, {
-    "name": "Ordinaryo",
-    "kunla": "Or-di-nar-yo",
-    "img": ""
-}, {
-    "name": "Maninoy",
-    "kunla": "Ma-ni-noy",
-    "img": ""
-}, {
-    "name": "Entiro",
-    "kunla": "En-ti-ro",
-    "img": ""
-}, {
-    "name": "Ebidensya",
-    "kunla": "E-bi-den-sya",
-    "img": ""
-}, {
     "name": "Eroplano",
     "kunla": "E-ro-pla-no",
     "img": "img/lessons/kunla/eroplano.png"
@@ -85,7 +65,7 @@
 }, {
     "name": "Regalo",
     "kunla": "Re-ga-lo",
-    "img": ""
+    "img": "img/lessons/kunla/regalo.png"
 }, {
     "name": "Plete",
     "kunla": "Ple-te",
@@ -115,10 +95,6 @@
     "kunla": "Ta-hu",
     "img": "img/lessons/kunla/tahu.png"
 }, {
-    "name": "Bana",
-    "kunla": "Ba-na",
-    "img": ""
-}, {
     "name": "Hitabu",
     "kunla": "Hi-ta-bu",
     "img": "img/lessons/kunla/hitabu.png"
@@ -134,10 +110,6 @@
     "name": "Orasan",
     "kunla": "O-ra-san",
     "img": "img/lessons/kunla/orasan.png"
-}, {
-    "name": "Orasyon",
-    "kunla": "O-ras-yon",
-    "img": ""
 }, {
     "name": "Igi",
     "kunla": "i-gi",
@@ -157,7 +129,7 @@
 }, {
     "name": "Agi",
     "kunla": "A-gi",
-    "img": ""
+    "img": "img/lessons/kunla/agi.png"
 }, {
     "name": "Aga",
     "kunla": "A-ga",

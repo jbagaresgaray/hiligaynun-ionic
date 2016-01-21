@@ -2,95 +2,126 @@
     "name": "A",
     "img":"img/lessons/letters/letters/a.jpg",
     "description": "",
-    "sample": "img/lessons/letters/pictures/amu (2).jpg"
+    "sample": "img/lessons/letters/pictures/amu (2).jpg",
+    "url": "img/lessons/letters/sound/a.mp3",
+    "title": "sample"
 }, {
     "name": "B",
     "img":"img/lessons/letters/letters/b.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/baga (3).jpg"
+    "sample": "img/lessons/letters/pictures/baga (3).jpg",
+    "url": "img/lessons/letters/sound/b.mp3",
+    "title": "sample"
 }, {
     "name": "D",
     "img":"img/lessons/letters/letters/d.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/Dahon.jpg"
+    "sample": "img/lessons/letters/pictures/Dahon.jpg",
+    "url": "img/lessons/letters/sound/d.mp3",
+    "title": "sample"
 }, {
     "name": "E",
     "img":"img/lessons/letters/letters/e.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/elisi.png"
+    "sample": "img/lessons/letters/pictures/elisi.png",
+    "url": "img/lessons/letters/sound/e.mp3",
+    "title": "sample"
 },{
     "name": "G",
     "img":"img/lessons/letters/letters/g.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/garapon.png"
+    "sample": "img/lessons/letters/pictures/garapon.png",
+    "url": "img/lessons/letters/sound/g.mp3",
+    "title": "sample"
 }, {
     "name": "H",
     "img":"img/lessons/letters/letters/h.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/comb.png"
+    "sample": "img/lessons/letters/pictures/comb.png",
+    "url": "img/lessons/letters/sound/h.mp3",
+    "title": "sample"
 }, {
     "name": "I",
     "img":"img/lessons/letters/letters/i.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/final.jpg"
+    "sample": "img/lessons/letters/pictures/final.jpg",
+    "url": "img/lessons/letters/sound/i.mp3",
+    "title": "sample"
 }, {
     "name": "K",
     "img":"img/lessons/letters/letters/k.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/ecokalan2.jpg"
+    "sample": "img/lessons/letters/pictures/ecokalan2.jpg",
+    "url": "img/lessons/letters/sound/k.mp3",
+    "title": "sample"
 }, {
     "name": "L",
     "img":"img/lessons/letters/letters/l.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/lata.jpg"
+    "sample": "img/lessons/letters/pictures/lata.jpg",
+    "url": "img/lessons/letters/sound/l.mp3",
+    "title": "sample"
 }, {
     "name": "M",
     "img":"img/lessons/letters/letters/m.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/mani.jpg"
+    "sample": "img/lessons/letters/pictures/mani.jpg",
+    "url": "img/lessons/letters/sound/m.mp3",
+    "title": "sample"
 }, {
     "name": "N",
     "img":"img/lessons/letters/letters/n.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/nipa.jpg"
+    "sample": "img/lessons/letters/pictures/nipa.jpg",
+    "url": "img/lessons/letters/sound/n.mp3",
+    "title": "sample"
 },{
     "name": "Ng",
     "img":"img/lessons/letters/letters/ng.png",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/Ngipon.jpg"
+    "sample": "img/lessons/letters/pictures/Ngipon.jpg",
+    "url": "img/lessons/letters/sound/ngng.mp3",
+    "title": "sample"
 },{
     "name": "O",
     "img":"img/lessons/letters/letters/o.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/okra.png"
+    "sample": "img/lessons/letters/pictures/okra.png",
+    "url": "img/lessons/letters/sound/o.mp3",
+    "title": "sample"
 }, {
     "name": "P",
     "img":"img/lessons/letters/letters/p.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/pispis1.jpg"
+    "sample": "img/lessons/letters/pictures/pispis1.jpg",
+    "url": "img/lessons/letters/sound/p.mp3",
+    "title": "sample"
 }, {
     "name": "R",
     "img":"img/lessons/letters/letters/r.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/rambutan-inside-2.jpg"
+    "sample": "img/lessons/letters/pictures/rambutan-inside-2.jpg",
+    "url": "img/lessons/letters/sound/r.mp3",
+    "title": "sample"
 }, {
     "name": "S",
     "img":"img/lessons/letters/letters/s.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/sulo.png"
-}, {
-    "name": "V",
-    "img":"img/lessons/letters/letters/v.jpg",
-    "translation": "",
-    "sample": ""
+    "sample": "img/lessons/letters/pictures/sulo.png",
+    "url": "img/lessons/letters/sound/s.mp3",
+    "title": "sample"
 }, {
     "name": "W",
     "img":"img/lessons/letters/letters/w.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/wasay.jpg"
+    "sample": "img/lessons/letters/pictures/wasay.jpg",
+    "url": "img/lessons/letters/sound/w.mp3",
+    "title": "sample"
 }, {
     "name": "Y",
     "img":"img/lessons/letters/letters/y.jpg",
     "translation": "",
-    "sample": "img/lessons/letters/pictures/yabe.jpg"
+    "sample": "img/lessons/letters/pictures/yabe.jpg",
+    "url": "img/lessons/letters/sound/y.mp3",
+    "title": "sample"
 }]

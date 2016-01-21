@@ -13,6 +13,13 @@ angular.module('starter')
     .controller('PlaylistDetailCtrl', function($scope, $window, $stateParams, $ionicLoading, Helpers) {
         console.log('params: ', $stateParams.letter);
         $scope.details = {};
+
+        function getPhoneGapPath() {
+            var path = window.location.pathname;
+            path = path.substr(path, path.length - 10);
+            return 'file://' + path;
+        }
+
         if (!_.isUndefined($stateParams.letter)) {
             if (!_.isEmpty($window.localStorage['data'])) {
                 $ionicLoading.show();
@@ -21,6 +28,7 @@ angular.module('starter')
                 $scope.details = _.findWhere(data, {
                     'name': $stateParams.letter
                 });
+                $scope.details.url = getPhoneGapPath() + $scope.details.url;
                 console.log('details: ', $scope.details);
                 $ionicLoading.hide();
             }
@@ -43,7 +51,7 @@ angular.module('starter')
                 $scope.details = _.findWhere(data, {
                     'title': $stateParams.sound
                 });
-                $scope.details.url = getPhoneGapPath() + $scope.details.url
+                $scope.details.url = getPhoneGapPath() + $scope.details.url;
                 console.log('details: ', $scope.details);
 
                 $ionicLoading.hide();

@@ -28,7 +28,7 @@
     "art": "img/lessons/tunog/picture/carabao.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
     "category": "sapat",
-    "sound": "",
+    "sound": "Unga! Unga!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -53,7 +53,7 @@
     "art": "img/lessons/tunog/picture/cow.jpg",
     "url": "img/lessons/tunog/sound/cow.wav",
     "category": "sapat",
-    "sound": "",
+    "sound": "Moo! Moo!",
     "ngstyle": {
         "border": "2px solid #0D0D0D",
         "border-radius": "8px",
@@ -65,7 +65,7 @@
     "art": "img/lessons/tunog/picture/download (1).jpg",
     "url": "img/lessons/tunog/sound/drum.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Boom! Boom!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -77,7 +77,7 @@
     "art": "img/lessons/tunog/picture/download (2).jpg",
     "url": "img/lessons/tunog/sound/maracas.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Tsk tsk tsk",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -89,7 +89,7 @@
     "art": "img/lessons/tunog/picture/download (3).jpg",
     "url": "img/lessons/tunog/sound/gitara.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Kuting! Kuting!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -137,7 +137,7 @@
     "art": "img/lessons/tunog/picture/images (2).jpg",
     "url": "img/lessons/tunog/sound/cymbal.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Piiiinnngggg",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -185,7 +185,7 @@
     "art": "img/lessons/tunog/picture/orasan.png",
     "url": "img/lessons/tunog/sound/clock.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Tiktak! Tiktak!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -197,7 +197,7 @@
     "art": "img/lessons/tunog/picture/bola.png",
     "url": "img/lessons/tunog/sound/ball.mp3",
     "category": "butang",
-    "sound": "",
+    "sound": "Pok pok pok",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -209,6 +209,7 @@
     "art": "img/lessons/tunog/picture/telepono.png",
     "url": "img/lessons/tunog/sound/telepono.mp3",
     "category": "butang",
+    "sound": "Kring! Kring!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -220,6 +221,7 @@
     "art": "img/lessons/tunog/picture/kampana.png",
     "url": "img/lessons/tunog/sound/bell.mp3",
     "category": "butang",
+    "sound":"Ding dong",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -231,6 +233,7 @@
     "art": "img/lessons/tunog/picture/ambulansya.png",
     "url": "img/lessons/tunog/sound/ambulance.mp3",
     "category": "butang",
+    "sound": "Wee! Wee!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -242,6 +245,7 @@
     "art": "img/lessons/tunog/picture/trumpeta.png",
     "url": "img/lessons/tunog/sound/trumpeta.mp3",
     "category": "butang",
+    "sound": "Toorot toottoot",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -253,6 +257,7 @@
     "art": "img/lessons/tunog/picture/pito.png",
     "url": "img/lessons/tunog/sound/pito.mp3",
     "category": "butang",
+    "sound":"Prrrt prrrt",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",
@@ -264,17 +269,7 @@
     "art": "img/lessons/tunog/picture/motor.png",
     "url": "img/lessons/tunog/sound/motor.mp3",
     "category": "butang",
-    "ngstyle": {
-        "border": "2px solid #7F7F7F",
-        "border-radius": "8px",
-        "background-color": "#663300"
-    }
-},{
-    "title": "Violen",
-    "artist": "",
-    "art": "img/lessons/tunog/picture/violen.png",
-    "url": "img/lessons/tunog/sound/violen.mp3",
-    "category": "butang",
+    "sound":"Broom! Broom!",
     "ngstyle": {
         "border": "2px solid #7F7F7F",
         "border-radius": "8px",

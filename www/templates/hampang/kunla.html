@@ -1,12 +1,19 @@
 <ion-view view-title="Kunla" hide-back-button="true">
-    <ion-content padding="true">
-        <div class="list card">
+    <ion-content>
+        <div class="card">
+            <center style="border:2px solid #FFD966;border-radius:8px;background-color:#66CCFF">
+                <small class="details">
+                    <strong>Direksyon:</strong> <span class="assertive">Tum-oka ang husto nga tinagpong o kunla  nga nagasugid na hanungod sa laragway. Pili- a ang husto nga sabat sa mga kahon.</span> 
+                </small>
+            </center>
+        </div>
+        <div class="card">
             <div class="item item-body">
                 <h1 class="text-center">{{questions.title}}</h1>
                 <img class="full-image" ng-src="{{questions.img}}">
             </div>
         </div>
-        <div class="list card kunla">
+        <div class="card kunla">
             <button class="button button-block" ng-repeat="answer in questions.choices" ng-class="{'button-balanced':$index == 0,'button-calm':$index==1,'button-energized':$index==2}" ng-click="showLoading(answer)">
                 {{answer.choice}}
             </button>
