@@ -51,6 +51,7 @@ angular.module('starter')
                 if (!_.isNull($scope.questions.ans)) {
                     var obj = {};
                     obj = $scope.questions;
+                    obj.ans = $scope.questions.ans;
                     obj.choice = value.choice;
                     
                     if ($scope.questions.ans === value.choice) {

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('letraCtrl', function($scope, $ionicLoading, $ionicPopup, $timeout, $ionicScrollDelegate, Quiz) {
+    .controller('letraCtrl', function($window, $state, $scope, $ionicLoading, $ionicPopup, $timeout, $ionicScrollDelegate, Quiz) {
 
         $scope.letra = [];
         $scope.letraArr = [];
@@ -9,6 +9,7 @@ angular.module('starter')
         $scope.index = {};
         $scope.centerAnchor = true;
         $scope.currentQuiz = 0;
+        $scope.scoreBoard = [];
 
         var myPopup = null;
 
@@ -44,12 +45,12 @@ angular.module('starter')
             $scope.shuffle = [];
             $timeout(function() {
                 $scope.myPromise = Quiz.shuffle().then(function(res) {
-                    console.log('res: ',res);
+                    console.log('res: ', res);
                     $scope.shuffle = res;
                     _.each($scope.shuffle, function(item) {
                         return item.selected = false;
                     });
-                    console.log('shuffle: ',$scope.shuffle);
+                    console.log('shuffle: ', $scope.shuffle);
                 });
             }, 600);
         }
@@ -73,6 +74,7 @@ angular.module('starter')
                 var ans = $scope.letra.answer[0];
                 var obj = {};
                 obj = $scope.letra;
+                obj.ans = ans;
                 obj.choice = value.value;
 
                 if (ans === value.value) {
@@ -85,6 +87,8 @@ angular.module('starter')
                     heading = 'WRONG';
                     template = '<div class="text-center"><img src="img/assets/wrong.png" width="100px;"><br><h1>' + value.value + '</h1></div>';
                 }
+                $scope.scoreBoard.push(obj);
+                $window.localStorage.scoreBoard = JSON.stringify($scope.scoreBoard);
 
 
                 myPopup = $ionicPopup.alert({

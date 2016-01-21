@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('starter')
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+        $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);
+
         $stateProvider
             .state('app', {
                 url: '/app',
@@ -144,7 +146,7 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
-                        controller: 'huniCtrl'
+                        controller: 'huniQuizCtrl'
                     }
                 }
             })
