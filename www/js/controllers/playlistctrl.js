@@ -28,7 +28,7 @@ angular.module('starter')
                 };
 
                 $scope.openHuni = function($event) {
-                    popover.show($event)
+                    $scope.popover.show($event)
                 };
 
                 $scope.openHuni1 = function(id) {
