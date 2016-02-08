@@ -1,14 +1,13 @@
 <ion-view view-title="Hiligaynon Krush">
-	<div class="bar bar-subheader">
+	<!-- <div class="bar bar-subheader">
         <div class="button-bar">
             <a class="button" ng-repeat="button in clientSideList" ng-click="eventButton(button.value)" ng-class="{'button-positive' : button.value === data.clientSide}">{{button.text}}</a>
         </div>
-    </div>
-    <ion-content class="has-header has-subheader">
+    </div> -->
+    <ion-content class="has-header">
         <ion-list>
             <ion-item href="#/app/wordingdetail/{{row.name}}" ng-repeat="row in wordings" class="item item-avatar item-icon-right">
-                <img ng-src="img/material1.jpg" ng-if="data.clientSide == 'suli'">
-                <img ng-src="img/material4.jpg" ng-if="data.clientSide == 'parehas'">
+                <img ng-src="{{row.image}}">
                 <h2>{{row.name}}</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>

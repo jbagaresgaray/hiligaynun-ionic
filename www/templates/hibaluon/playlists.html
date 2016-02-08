@@ -16,7 +16,7 @@
                 <h2>Kunla / Syllables</h2>
                 <i class="icon ion-chevron-right royal"></i>
             </ion-item>
-            <ion-item ng-click="showSuli()" href="#" class="item item-thumbnail-left item-icon-right" ng-show="ngShow.suli">
+            <ion-item ng-click="showPopSuli($event)" href="#" class="item item-thumbnail-left item-icon-right" ng-show="ngShow.suli">
                 <img src="img/assets/suli_logo.jpg">
                 <h2>Parehas kag Suli</h2>
                 <i class="icon ion-chevron-right royal"></i>
@@ -32,6 +32,19 @@
             </button>
             <button class="button button-block button-positive" ng-click="openHuni1('butang')"  ng-show="ngShow.butang">
                 Mga Butang
+            </button>
+        </ion-content>
+    </ion-popover-view>
+</script>
+
+<script id="templates/sulipopover.html" type="text/ng-template">
+    <ion-popover-view style="height: 160px;">
+        <ion-content class="padding">
+            <button class="button button-block button-positive" ng-click="showSuli('suli')"  ng-show="ngShow.suli">
+               Suli
+            </button>
+            <button class="button button-block button-positive" ng-click="showSuli('parehas')"  ng-show="ngShow.parehas">
+                Parehas
             </button>
         </ion-content>
     </ion-popover-view>

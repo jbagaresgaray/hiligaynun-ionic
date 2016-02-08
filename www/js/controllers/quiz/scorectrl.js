@@ -48,16 +48,64 @@ angular.module('starter')
         $scope.limit = quizarray.length;
 
         $scope.resetQuiz = function() {
-            // $state.go('app.main');
-            window.location.href = "#/app/main";
-            window.location.reload();
+            /*window.location.href = "#/app/main";
+            window.location.reload();*/
 
             $ionicHistory.nextViewOptions({
                 disableBack: true
             });
             $ionicViewSwitcher.nextDirection('back');
-            // $state.go('app.main');
-            window.location.href = "#/app/playlist/quiz";
+            $state.go('app.playlists',{
+                topicId:'quiz'
+            });
+
+            // window.location.href = "#/app/playlist/quiz";
+        };
+
+        $scope.quizStatus = function(score) {
+            if (topic.huni === 'huni') {
+                switch (true) {
+                    case (score == $scope.limit):
+                        return {
+                            msg: 'Excellent',
+                            class: 'balanced'
+                        }
+                        break;
+                    case (score >= 3 && score <= 4):
+                        return {
+                            msg: 'Very Good',
+                            class:'energized'
+                        }
+                        break;
+                    case (score < 3):
+                        return {
+                            msg: 'Good',
+                            class: 'calm'
+                        }
+                        break;
+                }
+            } else {
+                switch (true) {
+                    case (score == $scope.limit):
+                       return {
+                            msg: 'Excellent',
+                            class: 'balanced'
+                        }
+                        break;
+                    case (score >= 10 && score <= 14):
+                        return {
+                            msg: 'Very Good',
+                            class:'energized'
+                        }
+                        break;
+                    case (score < 10):
+                        return {
+                            msg: 'Good',
+                            class: 'calm'
+                        }
+                        break;
+                }
+            }
         };
 
         $scope.saveScore = function() {

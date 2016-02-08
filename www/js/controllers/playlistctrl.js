@@ -10,15 +10,22 @@ angular.module('starter')
             $scope.popover = popover;
         });
 
+        $ionicPopover.fromTemplateUrl('templates/sulipopover.html', {
+            scope: $scope,
+        }).then(function(popover) {
+            $scope.sulipopover = popover;
+        });
+
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
 
                 $scope.ngShow = {
                     letra: true,
-                    huni:true,
+                    huni: true,
                     sapat: true,
                     butang: true,
-                    suli:true
+                    suli: true,
+                    parehas: true
                 };
 
                 $scope.openLetra = function() {
@@ -58,16 +65,27 @@ angular.module('starter')
                     });
                 };
 
-                $scope.showSuli = function() {
+                $scope.showPopSuli = function($event) {
+                    $scope.sulipopover.show($event)
+                };
+
+                $scope.showSuli = function(topic) {
+                    $scope.sulipopover.hide();
                     var alertPopup = $ionicPopup.alert({
                         title: 'Meaning',
                         template: '<b>Parehas</b>- ang tinaga o dinalan nga may pareho nga kaulugan o ambotsilingon sa isa ka tinaga <br></br> <b>Kasuli</b> - mga  tinaga nga may kasuli nga  kahulugan o ambotsinlingon, gatumod mn sang tinaga nga lain sa isa ka tinaga.'
                     });
 
                     alertPopup.then(function(res) {
-                        $state.go('app.wordings', {
-                            topicId: 'suli'
-                        });
+                        if (topic === 'suli') {
+                            $state.go('app.wordings', {
+                                topicId: 'suli'
+                            });
+                        } else {
+                            $state.go('app.wordings', {
+                                topicId: 'parehas'
+                            });
+                        }
                     });
                 };
             } else {
@@ -75,14 +93,15 @@ angular.module('starter')
 
                 $scope.ngShow = {
                     letra: true,
-                    huni:true,
+                    huni: true,
                     sapat: false,
                     butang: false,
-                    suli:false
+                    suli: false,
+                    parehas: false
                 };
 
                 $scope.openLetra = function() {
-                    $window.localStorage.topic =  JSON.stringify({
+                    $window.localStorage.topic = JSON.stringify({
                         title: 'Letra',
                         tag: 'letra'
                     });
@@ -92,7 +111,7 @@ angular.module('starter')
                 };
 
                 $scope.openHuni = function() {
-                    $window.localStorage.topic =  JSON.stringify({
+                    $window.localStorage.topic = JSON.stringify({
                         title: 'Huni',
                         tag: 'huni'
                     });
@@ -101,7 +120,7 @@ angular.module('starter')
                 };
 
                 $scope.showKunla = function() {
-                    $window.localStorage.topic =  JSON.stringify({
+                    $window.localStorage.topic = JSON.stringify({
                         title: 'Kunla/Syllables',
                         tag: 'kunla'
                     });
@@ -174,41 +193,30 @@ angular.module('starter')
                     break;
                 case 'suli':
                     $ionicLoading.show();
-                    $scope.clientSideList = [{
-                        text: "Suli",
-                        value: "suli"
-                    }, {
-                        text: "Parehas",
-                        value: "parehas"
-                    }];
-
-                    $scope.data = {
-                        clientSide: 'suli'
-                    };
-
                     Helpers.wordings().then(function(res) {
-                        console.log('wordings: ', res.data);
                         $scope.wordings = _.filter(res.data, {
-                            'category': $scope.data.clientSide
+                            'category': $stateParams.topicId
                         });
-                        console.log('details: ', $scope.wordings);
+                        _.each($scope.wordings,function(row){
+                            return row.image = 'img/material1.jpg';
+                        });
                         $window.localStorage['data'] = JSON.stringify(res.data);
-
                         $ionicLoading.hide();
                     });
 
-
-                    $scope.eventButton = function(value) {
-                        $scope.wordings = [];
-                        $scope.data.clientSide = value;
-
-                        var data = JSON.parse($window.localStorage['data']);
-                        console.log('wordings: ', data);
-                        $scope.wordings = _.filter(data, {
-                            'category': $scope.data.clientSide
+                    break;
+                case 'parehas':
+                    $ionicLoading.show();
+                    Helpers.wordings().then(function(res) {
+                        $scope.wordings = _.filter(res.data, {
+                            'category': $stateParams.topicId
                         });
-                        console.log('details: ', $scope.wordings);
-                    };
+                        _.each($scope.wordings,function(row){
+                            return row.image = 'img/material4.jpg';
+                        });
+                        $window.localStorage['data'] = JSON.stringify(res.data);
+                        $ionicLoading.hide();
+                    });
                     break;
                 default:
                     $ionicLoading.hide();
