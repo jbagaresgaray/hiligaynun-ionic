@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+    .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
         $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);
 
         $stateProvider
@@ -142,7 +142,7 @@ angular.module('starter')
                 }
             })
             .state('app.quizHuni', {
-                url: '/quiz/huni',
+                url: '/quiz/huni/:params',
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
@@ -159,11 +159,11 @@ angular.module('starter')
                     }
                 }
             })
-            .state('app.quizWording', {
-                url: '/quiz/wording',
+            .state('app.quizParehasSuli', {
+                url: '/quiz/parehas/:topic',
                 views: {
                     'menuContent': {
-                        templateUrl: 'templates/hampang/wording.html',
+                        templateUrl: 'templates/hampang/parehas.html',
                         controller: 'wordingCtrl'
                     }
                 }

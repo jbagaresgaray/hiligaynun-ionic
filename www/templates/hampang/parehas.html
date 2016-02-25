@@ -1,0 +1,17 @@
+<ion-view view-title="Parehas Kag Suli" hide-back-button="true">
+    <ion-content class="padding">
+        <div class="card">
+            <center style="border:2px solid #FFD966;border-radius:8px;background-color:#66CCFF">
+                <p class="details">
+                    <strong>Direksyon:</strong> <span class="assertive">{{direksyon}}</span>
+                </p>
+            </center>
+            <div class="item item-image">
+                <img ng-src="{{questions.img}}" style="width:250px; !important">
+            </div>
+        </div>
+        <div class="button-bar bar-royal">
+            <a class="button" ng-repeat="a in questions.choices" ng-click="showLoading(a)" ng-class="!a.selected ? 'button-royal' : 'button-dark'">{{a.choice}}</a>
+        </div>
+    </ion-content>
+</ion-view>

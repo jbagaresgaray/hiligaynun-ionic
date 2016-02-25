@@ -1,0 +1,111 @@
+[{
+	"img":"img/quiz/suli/1.png",
+	"category": "suli",
+    "ans": "Bata",
+    "choices": [{
+        "choice": "Bata",
+        "selected": false
+    }, {
+        "choice": "Mainit",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/suli/2.png",
+	"category": "suli",
+    "ans": "Masadya",
+    "choices": [{
+        "choice": "Mapuli",
+        "selected": false
+    }, {
+        "choice": "Masadya",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/suli/3.png",
+	"category": "suli",
+    "ans": "Mainit",
+    "choices": [{
+        "choice": "Mainit",
+        "selected": false
+    }, {
+        "choice": "Sobra",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/suli/4.png",
+	"category": "suli",
+    "ans": "Matamad",
+    "choices": [{
+        "choice": "Mapino",
+        "selected": false
+    }, {
+        "choice": "Matamad",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/suli/5.png",
+	"category": "suli",
+    "ans": "Manubo",
+    "choices": [{
+        "choice": "Manubo",
+        "selected": false
+    }, {
+        "choice": "Matambok",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/parehas/1.png",
+	"category": "parehas",
+    "ans": "Mapisan",
+    "choices": [{
+        "choice": "Magamo",
+        "selected": false
+    }, {
+        "choice": "Mapisan",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/parehas/2.png",
+	"category": "parehas",
+    "ans": "Manunudlo",
+    "choices": [{
+        "choice": "Manunudlo",
+        "selected": false
+    }, {
+        "choice": "Mapintas",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/parehas/3.png",
+	"category": "parehas",
+    "ans": "Husto",
+    "choices": [{
+        "choice": "Husto",
+        "selected": false
+    }, {
+        "choice": "Alisto",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/parehas/4.png",
+	"category": "parehas",
+    "ans": "Matinlo",
+    "choices": [{
+        "choice": "Maestra",
+        "selected": false
+    }, {
+        "choice": "Matinlo",
+        "selected": false
+    }]
+},{
+	"img":"img/quiz/parehas/5.png",
+	"category": "parehas",
+    "ans": "Karera",
+    "choices": [{
+        "choice": "Karera",
+        "selected": false
+    }, {
+        "choice": "Tama",
+        "selected": false
+    }]
+}]

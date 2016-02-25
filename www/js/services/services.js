@@ -47,6 +47,11 @@ angular.module('starter')
                     return data.data;
                 });
             },
+            parehasSuli: function(){
+                return $http.get('js/values/quiz/parehas.json').then(function(data) {
+                    return data.data;
+                });
+            },
             shuffle: function() {
                 return $http.get('js/values/quiz/shuffle.json').then(function(data) {
                     return data.data;

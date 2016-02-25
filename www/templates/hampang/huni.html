@@ -1,19 +1,54 @@
-<ion-view view-title="Huni" hide-back-button="true">
+<ion-view view-title="Huni" hide-back-button="true" ng-show="showSapat">
     <ion-content class="padding">
         <div class="card">
             <center style="border:2px solid #FFD966;border-radius:8px;background-color:#66CCFF">
                 <p class="details">
-                    <strong>Direksyon:</strong> <span class="assertive">Hibalu-a ang may hinay kag tunog nga huni kag bahin bahina ini paagi sa pagpili kag pag tum-ok sang sabat sa kahon.</span> 
+                    <strong>Direksyon:</strong> <span class="assertive">Hibalu-a ang may hinay kag tunog nga huni kag bahin bahina ini paagi sa pagpili kag pag tum-ok sang sabat sa kahon.</span>
+                </p>
+            </center>
+        </div>
+        <div class="card">
+            <div class="item item-image">
+                <img ng-src="{{questions.img}}" width="200px">
+            </div>
+        </div>
+        <div class="button-bar bar-royal">
+            <a class="button" ng-repeat="a in questions.choices" ng-click="showLoading(a)" ng-class="!a.selected ? 'button-royal' : 'button-dark'">{{a.choice}}</a>
+        </div>
+    </ion-content>
+</ion-view>
+
+<ion-view view-title="Huni" hide-back-button="true" ng-show="!showSapat">
+    <ion-content class="padding">
+        <div class="card">
+            <center style="border:2px solid #FFD966;border-radius:8px;background-color:#66CCFF">
+                <p class="details">
+                    <strong>Direksyon:</strong> <span class="assertive">Hibalu-a ang may hinay kag tunog nga huni kag bahin bahina ini paagi sa pagpili kag pag tum-ok sang sabat sa kahon.</span>
                 </p>
             </center>
         </div>
         <div class="card">
             <div class="item item-body text-center">
-                <img ng-src="{{questions.img}}" width="200px">
+                <img ng-src="{{questions.img}}" width="100px">
             </div>
         </div>
-        <div class="button-bar bar-royal">
-            <a class="button" ng-repeat="a in questions.choices"  ng-click="showLoading(a)" ng-class="!a.selected ? 'button-royal' : 'button-dark'">{{a.choice}}</a>
+        <div class="row padding text-center" ng-repeat="value in questionsArrCopy track by $index" ng-if="$index % 3 === 0">
+            <div cg-busy="myPromise"></div>
+            <div class="col" ng-if="$index < questionsArrCopy.length">
+                <button class="button button-positive" ng-click="validate(questionsArrCopy[$index])">
+                    {{questionsArrCopy[$index].words}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 1 < questionsArrCopy.length">
+                <button class="button button-positive" ng-click="validate(questionsArrCopy[$index + 1])">
+                    {{questionsArrCopy[$index + 1].words}}
+                </button>
+            </div>
+            <div class="col" ng-if="$index + 2 < questionsArrCopy.length">
+                <button class="button button-positive" ng-click="validate(questionsArrCopy[$index + 2])">
+                    {{questionsArrCopy[$index + 2].words}}
+                </button>
+            </div>
         </div>
     </ion-content>
 </ion-view>

@@ -24,6 +24,7 @@
         </ion-list>
     </ion-content>
 </ion-view>
+
 <script id="templates/popover.html" type="text/ng-template">
     <ion-popover-view style="height: 160px;">
         <ion-content class="padding">
@@ -45,6 +46,19 @@
             </button>
             <button class="button button-block button-positive" ng-click="showSuli('parehas')"  ng-show="ngShow.parehas">
                 Parehas
+            </button>
+        </ion-content>
+    </ion-popover-view>
+</script>
+
+<script id="templates/quizpopover.html" type="text/ng-template">
+    <ion-popover-view style="height: 160px;">
+        <ion-content class="padding">
+            <button class="button button-block button-positive" ng-click="openHuni1('sapat')"  ng-show="ngShow.sapat">
+                Quiz 1
+            </button>
+            <button class="button button-block button-positive" ng-click="openHuni1('butang')"  ng-show="ngShow.butang">
+                Quiz 2
             </button>
         </ion-content>
     </ion-popover-view>

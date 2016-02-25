@@ -16,6 +16,12 @@ angular.module('starter')
             $scope.sulipopover = popover;
         });
 
+        $ionicPopover.fromTemplateUrl('templates/quizpopover.html', {
+            scope: $scope,
+        }).then(function(popover) {
+            $scope.quizpopover = popover;
+        });
+
         if (!_.isUndefined($stateParams.topicId)) {
             if ($stateParams.topicId == 'learn') {
 
@@ -35,7 +41,7 @@ angular.module('starter')
                 };
 
                 $scope.openHuni = function($event) {
-                    $scope.popover.show($event)
+                    $scope.popover.show($event);
                 };
 
                 $scope.openHuni1 = function(id) {
@@ -94,10 +100,10 @@ angular.module('starter')
                 $scope.ngShow = {
                     letra: true,
                     huni: true,
-                    sapat: false,
-                    butang: false,
-                    suli: false,
-                    parehas: false
+                    sapat: true,
+                    butang: true,
+                    suli: true,
+                    parehas: true
                 };
 
                 $scope.openLetra = function() {
@@ -110,13 +116,27 @@ angular.module('starter')
                     $location.path('/app/quiz/letter');
                 };
 
-                $scope.openHuni = function() {
-                    $window.localStorage.topic = JSON.stringify({
-                        title: 'Huni',
-                        tag: 'huni'
-                    });
+                $scope.openHuni = function($event) {
+                    $scope.quizpopover.show($event);
+                };
 
-                    $state.go('app.quizHuni');
+                $scope.openHuni1 = function(id) {
+                    $scope.quizpopover.hide();
+                    if (id == 'sapat') {
+                        $window.localStorage.topic = JSON.stringify({
+                            title: 'Huni - Quiz 1',
+                            tag: 'huni_sapat'
+                        });
+
+                        $state.go('app.quizHuni', { params: 'sapat' });
+                    } else {
+                        $window.localStorage.topic = JSON.stringify({
+                            title: 'Huni - Quiz 2',
+                            tag: 'huni_butang'
+                        });
+
+                        $state.go('app.quizHuni', { params: 'butang' });
+                    }
                 };
 
                 $scope.showKunla = function() {
@@ -128,8 +148,22 @@ angular.module('starter')
                     $state.go('app.quizKunla');
                 };
 
-                $scope.showSuli = function() {
-                    $state.go('app.quizWording');
+                $scope.showPopSuli = function($event) {
+                    $scope.sulipopover.show($event)
+                };
+
+                $scope.showSuli = function(topic) {
+                    $scope.sulipopover.hide();
+                    console.log('topic: ',topic);
+                    if (topic === 'suli') {
+                        $state.go('app.quizParehasSuli', {
+                            topic: 'suli'
+                        });
+                    } else {
+                        $state.go('app.quizParehasSuli', {
+                            topic: 'parehas'
+                        });
+                    }
                 };
             }
         }
@@ -197,7 +231,7 @@ angular.module('starter')
                         $scope.wordings = _.filter(res.data, {
                             'category': $stateParams.topicId
                         });
-                        _.each($scope.wordings,function(row){
+                        _.each($scope.wordings, function(row) {
                             return row.image = 'img/material1.jpg';
                         });
                         $window.localStorage['data'] = JSON.stringify(res.data);
@@ -211,7 +245,7 @@ angular.module('starter')
                         $scope.wordings = _.filter(res.data, {
                             'category': $stateParams.topicId
                         });
-                        _.each($scope.wordings,function(row){
+                        _.each($scope.wordings, function(row) {
                             return row.image = 'img/material4.jpg';
                         });
                         $window.localStorage['data'] = JSON.stringify(res.data);
