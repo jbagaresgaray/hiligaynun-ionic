@@ -28,7 +28,6 @@ angular.module('starter')
         }
 
         Quiz.syllables().then(function(res) {
-            console.log('syllables: ', res[0]);
             $scope.questionsArr = shuffleArray(res);
             $scope.questions = $scope.questionsArr[$scope.currentQuiz];
         });
@@ -77,8 +76,6 @@ angular.module('starter')
                 myPopup.then(function(res) {
                     $timeout(function() {
                         $scope.$apply(function() {
-                            console.log('$scope.currentQuiz: ',$scope.currentQuiz);
-                            console.log('$scope.questionsArr.length: ',($scope.questionsArr.length -1));
                             if ($scope.currentQuiz != ($scope.questionsArr.length -1)) {
                                 $scope.currentQuiz++;
                                 $scope.questions = $scope.questionsArr[$scope.currentQuiz];
@@ -92,4 +89,5 @@ angular.module('starter')
                 });
             }, 1000);
         };
+
     });

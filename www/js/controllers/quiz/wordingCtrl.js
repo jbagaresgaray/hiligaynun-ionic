@@ -67,13 +67,9 @@ angular.module('starter')
                 myPopup.then(function(res) {
                     $timeout(function() {
                         $scope.$apply(function() {
-                            console.log('$scope.currentQuiz: ', $scope.currentQuiz);
-                            console.log('$scope.questionsArr.length: ', ($scope.questionsArr.length - 1));
-
                             if ($scope.currentQuiz != ($scope.questionsArr.length - 1)) {
                                 $scope.currentQuiz++;
                                 $scope.questions = $scope.questionsArr[$scope.currentQuiz];
-                                console.log('questions: ', $scope.questions);
                             } else {
                                 console.log('go to result');
                                 $state.go('app.quizResult', {
@@ -86,4 +82,5 @@ angular.module('starter')
                 });
             }, 1000);
         };
+
     });

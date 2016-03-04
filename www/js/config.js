@@ -3,7 +3,8 @@
 angular.module('starter')
     .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
         $ionicConfigProvider.backButton.text('').icon('ion-chevron-left').previousTitleText(false);
-
+        // $ionicConfigProvider.views.maxCache(0);
+        
         $stateProvider
             .state('app', {
                 url: '/app',
@@ -137,7 +138,8 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/letra.html',
-                        controller: 'letraCtrl'
+                        controller: 'letraCtrl',
+                        cache: false
                     }
                 }
             })
@@ -146,7 +148,8 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/huni.html',
-                        controller: 'huniQuizCtrl'
+                        controller: 'huniQuizCtrl',
+                        cache: false
                     }
                 }
             })
@@ -155,7 +158,8 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/kunla.html',
-                        controller: 'kunlaCtrl'
+                        controller: 'kunlaCtrl',
+                        cache: false
                     }
                 }
             })
@@ -164,7 +168,8 @@ angular.module('starter')
                 views: {
                     'menuContent': {
                         templateUrl: 'templates/hampang/parehas.html',
-                        controller: 'wordingCtrl'
+                        controller: 'wordingCtrl',
+                        cache: false
                     }
                 }
             })

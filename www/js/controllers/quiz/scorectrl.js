@@ -1,6 +1,19 @@
 'use strict';
 
 angular.module('starter')
+    .controller('scoreBoardCtrl', function($scope, $window, Score) {
+        $scope.doRefresh = function() {
+            Score.all().then(function(response) {
+                    console.log('response: ', response);
+                    $scope.scores = response;
+                })
+                .finally(function() {
+                    // Stop the ion-refresher from spinning
+                    $scope.$broadcast('scroll.refreshComplete');
+                });
+
+        };
+    })
     .controller('scoreCtrl', function($scope, $timeout, $ionicHistory, $stateParams, $ionicPopup, $state, $window, $ionicViewSwitcher, Score) {
         $scope.quiz = {
             title: '',
@@ -55,11 +68,9 @@ angular.module('starter')
                 disableBack: true
             });
             $ionicViewSwitcher.nextDirection('back');
-            $state.go('app.playlists',{
-                topicId:'quiz'
+            $state.go('app.playlists', {
+                topicId: 'quiz'
             });
-
-            // window.location.href = "#/app/playlist/quiz";
         };
 
         $scope.quizStatus = function(score) {
@@ -74,12 +85,17 @@ angular.module('starter')
                     case (score >= 3 && score <= 4):
                         return {
                             msg: 'Very Good',
-                            class:'energized'
+                            class: 'energized'
                         }
                         break;
-                    case (score < 3):
+                    case (score >= 1 && score < 3):
                         return {
                             msg: 'Good',
+                            class: 'calm'
+                        }
+                    case (score < 1):
+                        return {
+                            msg: 'Bad',
                             class: 'calm'
                         }
                         break;
@@ -87,7 +103,7 @@ angular.module('starter')
             } else {
                 switch (true) {
                     case (score == $scope.limit):
-                       return {
+                        return {
                             msg: 'Excellent',
                             class: 'balanced'
                         }
@@ -95,12 +111,17 @@ angular.module('starter')
                     case (score >= 10 && score <= 14):
                         return {
                             msg: 'Very Good',
-                            class:'energized'
+                            class: 'energized'
                         }
                         break;
-                    case (score < 10):
+                    case (score >= 5 && score < 10):
                         return {
                             msg: 'Good',
+                            class: 'calm'
+                        }
+                    case (score < 5):
+                        return {
+                            msg: 'Bad',
                             class: 'calm'
                         }
                         break;
@@ -147,18 +168,9 @@ angular.module('starter')
                     }
                 }]
             });
-        }
-    })
-    .controller('scoreBoardCtrl', function($scope, $window, Score) {
-        $scope.doRefresh = function() {
-            Score.all().then(function(response) {
-                    console.log('response: ', response);
-                    $scope.scores = response;
-                })
-                .finally(function() {
-                    // Stop the ion-refresher from spinning
-                    $scope.$broadcast('scroll.refreshComplete');
-                });
-
         };
+
+        $scope.$on("$ionicView.afterLeave", function() {
+            $ionicHistory.clearCache();
+        });
     });

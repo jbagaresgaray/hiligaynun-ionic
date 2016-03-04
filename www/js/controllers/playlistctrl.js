@@ -110,6 +110,10 @@ angular.module('starter')
                     $window.localStorage.topic = JSON.stringify({
                         title: 'Letra',
                         tag: 'letra'
+                    }, {
+                        reload: true,
+                        inherit: false,
+                        notify: true
                     });
 
                     // $state.go('app.quizLetter');
@@ -128,14 +132,22 @@ angular.module('starter')
                             tag: 'huni_sapat'
                         });
 
-                        $state.go('app.quizHuni', { params: 'sapat' });
+                        $state.go('app.quizHuni', { params: 'sapat' }, {
+                            reload: true,
+                            inherit: false,
+                            notify: true
+                        });
                     } else {
                         $window.localStorage.topic = JSON.stringify({
                             title: 'Huni - Quiz 2',
                             tag: 'huni_butang'
                         });
 
-                        $state.go('app.quizHuni', { params: 'butang' });
+                        $state.go('app.quizHuni', { params: 'butang' }, {
+                            reload: true,
+                            inherit: false,
+                            notify: true
+                        });
                     }
                 };
 
@@ -145,7 +157,11 @@ angular.module('starter')
                         tag: 'kunla'
                     });
 
-                    $state.go('app.quizKunla');
+                    $state.go('app.quizKunla', {
+                        reload: true,
+                        inherit: false,
+                        notify: true
+                    });
                 };
 
                 $scope.showPopSuli = function($event) {
@@ -154,14 +170,22 @@ angular.module('starter')
 
                 $scope.showSuli = function(topic) {
                     $scope.sulipopover.hide();
-                    console.log('topic: ',topic);
+                    console.log('topic: ', topic);
                     if (topic === 'suli') {
                         $state.go('app.quizParehasSuli', {
                             topic: 'suli'
+                        }, {
+                            reload: true,
+                            inherit: false,
+                            notify: true
                         });
                     } else {
                         $state.go('app.quizParehasSuli', {
                             topic: 'parehas'
+                        }, {
+                            reload: true,
+                            inherit: false,
+                            notify: true
                         });
                     }
                 };

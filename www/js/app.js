@@ -50,7 +50,7 @@ angular
         })
 
 
-        $ionicPlatform.onHardwareBackButton(function() {
+        /*$ionicPlatform.onHardwareBackButton(function() {
             if ($state.current.name === 'app.quizKunla') {
                 event.preventDefault();
                 event.stopPropagation();
@@ -62,7 +62,7 @@ angular
                 event.preventDefault();
                 event.stopPropagation();
             }
-        }, 100);
+        }, 100);*/
     })
     .constant('DB_CONFIG', {
         name: 'Hiligaynon',

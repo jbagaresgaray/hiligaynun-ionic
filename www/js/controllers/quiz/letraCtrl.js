@@ -99,13 +99,9 @@ angular.module('starter')
                 myPopup.then(function(res) {
                     $timeout(function() {
                         $scope.$apply(function() {
-                            console.log('$scope.currentQuiz: ', $scope.currentQuiz);
-                            console.log('$scope.letraArr.length: ', ($scope.letraArr.length - 1));
-
                             if ($scope.currentQuiz != ($scope.letraArr.length - 1)) {
                                 $scope.currentQuiz++;
                                 $scope.letra = $scope.letraArr[$scope.currentQuiz];
-                                console.log('letra: ', $scope.letra);
                                 Shuffles();
                             } else {
                                 console.log('go to result');
@@ -123,4 +119,6 @@ angular.module('starter')
 
         init();
         Shuffles();
+
+
     });
